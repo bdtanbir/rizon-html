@@ -1,0 +1,215 @@
+
+
+
+  
+.all-sections {
+    .all-section-inner {
+        .portfolio {
+            .hero_title_shape {
+                margin-bottom: 40px;
+            }
+            #portfolio-filter {
+                .filters {
+                    margin-bottom: 30px;
+                    .button {
+                        background: $white_color;
+                        color: $heading_color; 
+                        font-family: $nunito;
+                        padding: 8px 20px;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        position: relative;
+                        font-size: 14px;
+                        letter-spacing: 0.4px;
+                        z-index: 1;
+                        overflow: hidden;
+                        margin-bottom: 5px;
+                        background: rgba(16, 137, 255, 0.1);
+                        @include border_radius(30px);
+                        @include transition(.3s);
+                        &:hover {
+                            color: $white_color;
+                            @include box_shadow(rgba(16, 137, 255, 0.15));
+                            &:before {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                        &:before {
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            left: 0;
+                            visibility: hidden;
+                            opacity: 0;
+                            z-index: -1;
+                            top: 0;
+                            background-image: linear-gradient(to right, $secondary_color, $primary_color);
+                            @include transition(.3s);
+                        }
+                    }
+                    button.is-checked {
+                        color: $white_color;
+                        @include box_shadow(rgba(16, 137, 255, 0.15));
+                        &:before {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+                .grid {
+                    @media #{$lg_mobile, $mobile_device} {
+                        width: 100%;
+                        margin: auto;
+                    }
+                    .element-item {
+                        position: relative;
+                        width: 33.333333%;
+                        border-right: 10px solid $white_color;
+                        border-bottom: 10px solid $white_color;
+                        @media #{$lg_mobile, $mobile_device} {
+                            width: 100%;
+                            margin: auto;
+                            border-right: none;
+                        }
+                        .portfolio-image {
+                            position: relative;
+                            overflow: hidden;
+                            @include border_radius(10px);
+                            &:hover {
+                                a {
+                                    &:before,
+                                    &:after {
+                                        opacity: 1;
+                                        width: 100%;
+                                    }
+                                    i {
+                                        margin-top: 0px;
+                                        opacity: 1;
+                                    }
+                                }
+                                .portfolio-info {
+                                    h3, span {
+                                        left: 0;
+                                    }
+                                }
+                            }
+                            a {
+                                display: block;
+                                top:0;
+                                left: 0;
+                                position: relative;
+                                z-index: 1;
+                                @include transition(.3s);
+                                img {
+                                    width: 100%;
+                                }
+                                &:before,
+                                &:after {
+                                    content: '';
+                                    background: rgba(16, 137, 255, 0.3);
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    width: 0;
+                                    height: 50%;
+                                    z-index: 1;
+                                    opacity: 0;
+                                    @include transition(.3s);
+                                }
+                                &:after {
+                                    left: auto;
+                                    right: 0;
+                                    top: auto;
+                                    bottom: 0;
+                                }
+                                i {
+                                    color: $white_color;
+                                    position: absolute;
+                                    left: 50%;
+                                    top: 50%;
+                                    background: $primary_color;
+                                    z-index: 2;
+                                    width: 45px;
+                                    height: 45px;
+                                    text-align: center;
+                                    font-size: 25px;
+                                    line-height: 45px;
+                                    margin-top: -50px;
+                                    opacity: 0;
+                                    @include transition(.3s);
+                                    @include transform(translate(-50%, -50%));
+                                    @include border_radius(50%);
+                                    &:hover {
+                                        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.15), 0 0 0 12px rgba(255, 255, 255, 0.1);
+                                    }
+                                }
+                            }
+                            .portfolio-info {
+                                position: absolute;
+                                left: 5%; 
+                                width: 90%;
+                                bottom: 10px;
+                                z-index: 1;
+                                display: flex;
+                                min-height: 56px;
+                                @include flex_direction(column);
+                                @include align_items(flex-start);
+                                h3 {
+                                    background:$white_color;
+                                    font-family: $nunito;
+                                    left: -200px;
+                                    display: inline-block;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    padding: 5px 10px;
+                                    position: absolute;
+                                    top: 0;
+                                    @include border_radius(4px);
+                                    @include transition(.3s);
+                                }
+                                span {
+                                    background:$white_color;
+                                    color: $paragraph_color;
+                                    font-family: $nunito;
+                                    left: -200px;
+                                    position: absolute;
+                                    bottom: 0; 
+                                    display: inline-block;
+                                    padding: 2px 10px;
+                                    margin-top: 1px;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    @include border_radius(4px);
+                                    @include transition(.6s);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.layout-st-2 {
+    .all-sections {
+        .all-section-inner {
+            .portfolio {
+                #portfolio-filter {
+                    .grid {
+                        .element-item {
+                            @media #{$lg_mobile, $mobile_device} {
+                                width: 100%;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.lb-nav a.lb-next:before, .lb-nav a.lb-prev:before {
+    background: linear-gradient(to right, $secondary_color, $primary_color);
+}

@@ -1,0 +1,136 @@
+.fun-facts {
+	.hero_title_shape {
+		margin-bottom: 32px;
+	}
+	.row {
+		@include align_items(center);
+	}
+	.col-lg-4 {
+		&:last-child {
+			.fun-facts-box {
+				@media #{$ipad_device, $lg_mobile, $mobile_device} {
+					margin: 30px 0 0 0;
+				}
+			}
+		}
+	}
+	.fun-facts-box {
+		position: relative;
+		text-align: center;
+		background: linear-gradient(45deg, $primary_color, $secondary_color);
+		padding: 0 10px 20px 10px;
+		z-index: 1;
+		margin: 30px 0 0 0;
+		@include border_radius(4px);
+		@include transition(.3s);
+		@media #{$ipad_device, $lg_mobile, $mobile_device} {
+			margin: 30px 0 20px 0;
+		}
+		&:hover {
+			@include box_shadow(5px 4px 30px rgba(95, 111, 129, 0.2));
+			&:before {
+				opacity: 1;
+				visibility: visible;
+			}
+			.icon {
+				&:before,
+				&:after {
+					background: $white_color;
+				}
+				i {
+					background: $primary_color;
+					color: $white_color;
+					&:after {
+						background: $primary_color;
+					}
+				}
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			background: linear-gradient(-45deg, $primary_color, $secondary_color);
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			opacity: 0;
+			visibility: hidden;
+			@include border_radius(4px);
+			@include transition(.3s);
+		}
+		.content-box {
+			padding: 50px 0 0 0;
+			.counterup {
+				font-size: 30px;
+				font-weight: 600;
+				line-height: 30px;
+				display: inline-block;
+				color: $white_color;
+			}
+			p {
+				font-size: 16px;
+    			font-weight: 500;
+				margin: 5px 0 0 0;
+				opacity: 0.9;
+				color: $white_color;
+			}
+		}
+		.icon {
+			position: relative;
+			width: 45px;
+			height: 45px;
+			margin: -22px auto auto auto;
+			position: absolute;
+			left: 50%;
+			@include transform( translate(-50%, 0) );
+			@include box_shadow( 5px 4px 30px rgba( 95, 111, 129, 0.2 ) );
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				width: 1px;
+				height: 10px;
+				right: 6px;
+				top: 0;
+				z-index: 1;
+				background: $primary_color;
+				@include transform_origin(top);
+				@include transform(rotate(45deg));
+				@include transition(.3s);
+			}
+			&:after {
+				right: 0px;
+    			top: 1px;
+			}
+			i {
+				position: relative;
+				display: inline-block;
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+				font-size: 25px;
+				margin: 0 0 0 0;
+				background: $white_color;
+				color: $primary_color;
+				@include border_radius(4px);
+				@include transition(.3s);
+				&:after {
+					content: '';
+					width: 10px;
+					height: 10px;
+					position: absolute;
+					left: 50%;
+					bottom: -9px;
+					z-index: -1;
+					background: $white_color;
+					@include transform(rotate(45deg) translate(-50%, 0));
+					@include transition(.3s);
+				}
+			}
+		}
+	}
+}
+

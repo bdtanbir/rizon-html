@@ -1,0 +1,168 @@
+
+
+body.section-animation-2 {
+  .all-sections {
+    .all-section-inner {
+      .single_page {
+        left: -500px;
+        right: auto;
+        opacity: 0;
+        visibility: hidden;
+        @media #{$ipad_device, $lg_mobile, $mobile_device} {
+          left: 0;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .single_page.active {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+body.section-animation-3 {
+  .all-sections {
+    .all-section-inner {
+      .single_page {
+        left: 0;
+        right: auto;
+        opacity: 0;
+        visibility: hidden;
+        top: -200px;
+        @media #{$ipad_device, $lg_mobile, $mobile_device} {
+          top: 0;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .single_page.active {
+        top: 0;
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+body.section-animation-4 {
+  .all-sections {
+    .all-section-inner {
+      .single_page {
+        left: 0;
+        right: auto;
+        opacity: 0;
+        visibility: hidden;
+        @media #{$ipad_device, $lg_mobile, $mobile_device} {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .single_page.active {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+body.section-animation-5 {
+  .all-sections {
+    .all-section-inner {
+      .single_page {
+        left: 0;
+        right: auto;
+        opacity: 0;
+        visibility: hidden;
+        @include transform_origin(top);
+        @include transform(scale(0));
+        @media #{$ipad_device, $lg_mobile, $mobile_device} {
+          opacity: 1;
+          visibility: visible;
+          @include transform(scale(1));
+        }
+      }
+      .single_page.active {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        @include transform(scale(1));
+      }
+    }
+  }
+}
+body.section-animation-6 {
+  .all-sections {
+    .all-section-inner {
+      .single_page {
+        left: 0;
+        right: auto;
+        opacity: 0;
+        visibility: hidden;
+        @include transform_origin(top);
+        @include transform(rotate(90deg));
+        @media #{$ipad_device, $lg_mobile, $mobile_device} {
+          opacity: 1;
+          visibility: visible;
+          @include transform(rotate(0deg));
+        }
+      }
+      .single_page.active {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        @include transform(rotate(0));
+      }
+    }
+  }
+}
+body.section-animation-7 {
+  .all-sections {
+    .all-section-inner {
+      .single_page {
+        left: 0;
+        right: auto;
+        opacity: 0;
+        visibility: hidden;
+        @include transform(rotateY(90deg));
+        @media #{$ipad_device, $lg_mobile, $mobile_device} {
+          opacity: 1;
+          visibility: visible;
+          @include transform(rotateY(0deg));
+        }
+      }
+      .single_page.active {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        @include transform(rotateY(0deg));
+      }
+    }
+  }
+}
+body.section-animation-8 {
+  .all-sections {
+    .all-section-inner {
+      .single_page {
+        left: 0;
+        right: auto;
+        opacity: 0;
+        visibility: hidden;
+        @include transform_origin(top);
+        @include transform(rotateX(90deg));
+        @media #{$ipad_device, $lg_mobile, $mobile_device} {
+          opacity: 1;
+          visibility: visible;
+          @include transform(rotateX(0deg));
+        }
+      }
+      .single_page.active {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        @include transform(rotateX(0deg));
+      }
+    }
+  }
+}

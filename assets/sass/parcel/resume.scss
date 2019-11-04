@@ -1,0 +1,546 @@
+
+
+  
+.all-sections {
+    .all-section-inner {
+        .resume {
+            padding-bottom: 0;
+            .hero_title_shape	{
+                margin-bottom: 40px;
+            }
+            .col-lg-6 {
+                @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                    padding: 0;
+                }
+            }
+            .resume-title,
+            .skills-section-title {
+                position: relative;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                background: linear-gradient(45deg, rgba(16, 137, 255, 0.1), transparent);
+                display: inline-flex;
+                padding: 5px 10px 5px 5px;
+                @include align_items(center);
+                @include border_radius(30px 0 0 30px);
+                i {
+                    color: $white_color;
+                    background: linear-gradient(45deg, $primary_color, $secondary_color);
+                    margin: 0 10px 0 0;
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 20px;
+                    @include border_radius(50%);
+                }
+            }
+            .education-experience-title {
+                @media #{$mobile_device_xs, $mobile_device_xs2} {
+                    @include flex_direction(column);
+                }
+                .resume-title {
+                    margin: 0 0 0 0;
+                    @include border_radius(0);
+                    i {
+                        @include border_radius(30px 0 0 30px);
+                        @media #{$mobile_device_xs, $mobile_device_xs2} {
+                            @include border_radius(50%);
+                        }
+                    }
+                }
+                .resume-title.experience-title {
+                    background: linear-gradient(45deg, transparent, rgba(16, 137, 255, 0.1));
+                    margin: 0 0 0 0;
+                    padding: 5px 0 5px 10px;
+                    @include border_radius(0);
+                    @media #{$mobile_device_xs, $mobile_device_xs2} {
+                        padding: 5px 5px 5px 10px;
+                        @include border_radius(0 30px 30px 0);
+                    }
+                    i {
+                        margin: 0 0 0 10px;
+                    }
+                }
+                .resume-title.education-title {
+                    padding: 5px 10px 5px 0;
+                    @media #{$mobile_device_xs, $mobile_device_xs2} {
+                        padding: 5px 10px 5px 5px;
+                        @include border_radius(30px 0 0 30px);
+                    }
+                    i {
+                        @include border_radius(0 30px 30px 0);
+                        @media #{$mobile_device_xs, $mobile_device_xs2} {
+                            @include border_radius(50%);
+                        }
+                    }
+                }
+            }
+            
+            .experience-and-education-flex-box {
+                @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                    @include flex_direction(column);
+                }
+                .resume-content-box.experience {
+                    .resume-content {
+                        .experience-box {
+                            &:after,
+                            &:before {
+                                left: auto;
+                                right: -43px;
+                                @media #{$laptop_device_2} {
+                                    right: -36px;
+                                }
+                                @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                                    right: auto;
+                                    left: -25px;
+                                }
+                            }
+                            &:before {
+                                right: -34px;
+                                top: 15px;
+                                @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                                    right: auto;
+                                    left: -25px;
+                                }
+                                @media #{$laptop_device_2} {
+                                    right: -29px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .resume-content-box {
+                    flex-basis: 47%;
+                    flex-wrap: wrap;
+                    text-align: right;
+                    .resume-content {
+                        position: relative;
+                        padding: 40px 0 40px 0;
+                        @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                            padding: 40px 0 20px 0;
+                        }
+                        &:before {
+                            content: '';
+                            width: 1px;
+                            height: 100%;
+                            position: absolute;
+                            right: -37px;
+                            top: 0;
+                            background: linear-gradient(45deg, transparent, $primary_color, transparent);
+                            opacity: 0.5;
+                            @media #{$laptop_device_2} {
+                                right: -30px;
+                            }
+                            @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                                right: 0;
+                                left: -20px;
+                            }
+                        }
+                        .experience-box {
+                            border: 1px solid $white_color;
+                            margin: 0 0 20px 0;
+                            padding: 30px 30px 20px 25px;
+                            position: relative;
+                            background: linear-gradient(90deg, transparent, rgba(16, 137, 255, 0.05));
+                            @include transition(.3s);
+                            @include border_radius(4px);
+                            @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                                background: linear-gradient(90deg, rgba(16, 137, 255, 0.05), transparent);
+                            }
+                            &:first-child {
+                                &:after {
+                                    @include border_radius(50%);
+                                }
+                            }
+                            &:last-child {
+                                margin: 0 0 0 0;
+                            }
+                            &:hover {
+                                @include box_shadow(0 0 30px rgba(95, 111, 129, 0.1));
+                                background: $white_color;
+                                &:before {
+                                    border-color: $primary_color
+                                }
+                            }
+                            &:before {
+                                content: '';
+                                width: 35px;
+                                height: 1px;
+                                position: absolute;
+                                left: -34px;
+                                top: 15px;
+                                background: $blue_gray;
+                                @include transition(0.3s);
+                                @media #{$laptop_device_2} {
+                                    width: 30px;
+                                    left: -28px;
+                                }
+                                @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                                    width: 25px;
+                                    left: -25px;
+                                }
+                            }
+                            &:after {
+                                content: '';
+                                width: 10px;
+                                height: 10px;
+                                border: 2px solid $blue_gray;
+                                position: absolute;
+                                left: -41px;
+                                top: 11px;
+                                background: $white_color;
+                                @include transform(rotate(45deg));
+                                @include border_radius(50%);
+                                @media #{$laptop_device_2} {
+                                    left: -32px;
+                                }
+                                @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                                    left: -25px;
+                                }
+                            }
+                            h3 {
+                                font-size: 16px;
+                                font-weight: 600;
+                                letter-spacing: 0.2px;
+                            }
+                            p {
+                                font-size: 17px;
+                                line-height: 1.8;
+                            }
+                            .company {
+                                display: block;
+                                font-size: 10px;
+                                font-weight: 400;
+                                margin: 4px 0 15px 0;
+                            }
+                            .exp-date {
+                                margin: 0 0 0 30px;
+                                .date {
+                                    color: $white_color;
+                                    background: linear-gradient(45deg, $primary_color, $secondary_color);
+                                    display: inline-block;
+                                    padding: 8px 10px;
+                                    font-size: 10px;
+                                    font-weight: 500;
+                                    overflow-wrap: break-word;
+                                    word-break: break-all;
+                                    width: 30px;
+                                    margin: -6px 0 0 0;
+                                    line-height: 18px;
+                                    text-align: center;
+                                    @include border_radius(30px);
+                                    .line {
+                                        color: $white_color;
+                                        display: block;
+                                        font-weight: 600;
+                                        width: 8px;
+                                        margin: 10px auto 10px auto;
+                                        @include border_radius(10px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                }
+                .resume-content-box.education {
+                    text-align: left;
+                    .resume-content {
+                        padding-bottom: 0;
+                        margin: 30px 0 50px 0;
+                        &:before {
+                            display: none;
+                            @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                                display: block;
+                            }
+                        }
+                        .experience-box {
+                            background: linear-gradient(90deg, rgba(16, 137, 255, 0.05), transparent);
+                            &:hover {
+                                background: $white_color;
+                            }
+                            .exp-date {
+                                margin: 0 30px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .personal-skill {
+                margin: 50px 0 0 0;
+                .skills-section-title {
+                    margin: 0 0 25px 0;
+                }
+                .personal-skl-info {
+                    li {
+                        position: relative;
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding: 6px 0 6px 20px;
+                        &:last-child {
+                            padding: 6px 0 0 20px;
+                            &:after {
+                                display: none;
+                            }
+                        }
+                        &:before {
+                            content: '';
+                            width: 8px;
+                            height: 8px;
+                            position: absolute;
+                            background: linear-gradient(45deg, $primary_color, $secondary_color);
+                            left: 2px;
+                            top: 50%;
+                            margin-bottom: 5px;
+                            border: 2px solid $white_color;
+                            box-shadow: 0 0 0 2px $primary_color;
+                            @include border_radius(50%);
+                            @include transform(translate(0, -50%));
+                        }
+                        &:after {
+                            content: '';
+                            width: 100%;
+                            height: 1px;
+                            position: absolute;
+                            background: linear-gradient(45deg, $white_color, $primary_color, $white_color);
+                            left: 0;
+                            bottom: 0;
+                            opacity: 0.1;
+                        }
+                    }
+                }
+            }
+            .semi-progressbar {
+                .skills {
+                    &:first-child {
+                        .resume-section-title {
+                            margin: 0 0 0 0;
+                        }
+                    }
+                    .resume-section-title {
+                        background: linear-gradient(45deg, rgba(16, 137, 255, 0.1), transparent);
+                        position: relative;
+                        font-size: 20px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        display: inline-flex;
+                        padding: 5px 10px 5px 5px;
+                        margin: 50px 0 0 0;
+                        @include align_items(center);
+                        @include border_radius(30px 0 0 30px);
+                        @media #{$mobile_device_xs2, $mobile_device_xs} {
+                            font-size: 18px;
+                        }
+                        i {
+                            color: $white_color;
+                            background: linear-gradient(45deg, $primary_color, $secondary_color);
+                            margin: 0 10px 0 0;
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            @include border_radius(50%);
+                        }
+                    }
+                    .skill-flex {
+                        display: flex;
+                        @include justify_content(space-between);
+                        @include flex_wrap(wrap);
+                        @media #{$ipad_device, $lg_mobile} {
+                            @include flex_basis(50%);
+                            @include flex_wrap(wrap);
+                        }
+                        @media #{$mobile_device} {
+                            @include flex_basis(100%);
+                            @include flex_wrap(wrap);
+                        }
+                        .pgb-box {
+                            margin: 30px 0 0 0;
+                            @media #{$ipad_device} {
+                                @include flex_basis(50%);
+                                @include flex_wrap(wrap);
+                            }
+                            @media #{$lg_mobile, $mobile_device} {
+                                @include flex_basis(100%);
+                                @include flex_wrap(wrap);
+                            }
+                            h3 {
+                                background: linear-gradient(45deg, $primary_color, $secondary_color);
+                                color: $white_color;
+                                font-family: $nunito;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin: 0 0 15px 0;
+                                display: inline-block;
+                                padding: 4px 8px;
+                                position:relative;
+                                @include border_radius(30px);
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    background: linear-gradient(45deg, $primary_color, $secondary_color);
+                                    width: 8px;
+                                    height: 8px;
+                                    left: 50%;
+                                    bottom: -3px;
+                                    z-index: -1;
+                                    @include transform(translate(-50%, 0) rotate(45deg));
+                                }
+                            }
+                            .progress {
+                                width: 120px;
+                                height: 120px;
+                                background: none;
+                                position: relative;
+                                margin: 0;
+                                &:after {
+                                    content: "";
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 3px solid $gray_color;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    @include border_radius(50%);
+                                }
+                                >span {
+                                    width: 50%;
+                                    height: 100%;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    top: 0;
+                                    z-index: 1;
+                                }
+                                .progress-left {
+                                    left: 0;
+                                    .progress-bar {
+                                        left: 100%;
+                                        border-top-right-radius: 80px;
+                                        border-bottom-right-radius: 80px;
+                                        border-left: 0;
+                                        @include transform_origin(center left);
+                                    }
+                                }
+                                .progress-bar {
+                                    width: 100%;
+                                    height: 100%;
+                                    background: none;
+                                    position: absolute;
+                                    top: 0;
+                                    border-width: 3px;
+                                    border-style: solid;
+                                    border-color: $primary_color !important;
+                                }
+                                .progress-right {
+                                    right: 0;
+                                    .progress-bar {
+                                        left: -100%;
+                                        border-top-left-radius: 80px;
+                                        border-bottom-left-radius: 80px;
+                                        border-right: 0;
+                                        @include transform_origin(center right);
+                                    }
+                                }
+                                .progress-value {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    z-index: 11;
+                                    .h2 {
+                                        color: $paragraph_color;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        width: 55px;
+                                        height: 55px;
+                                        line-height: 55px;
+                                        text-align: center;
+                                        @include border_radius(50%);
+                                        @include box_shadow(0 0 30px rgba(50, 50, 50, 0.06));
+                                    }
+                                }
+                            }
+                        }
+                        .progress-bar-2{
+                            h3 {
+                                font-size: 14px;
+                                font-weight: 500;
+                                margin: 0 0 8px 0;
+                            }
+                            .barOverflow{
+                                position: relative;
+                                width: 150px; 
+                                height: 150px;
+                                .bar{
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 150px;
+                                    height: 150px;
+                                    border: 5px solid $gray_color;
+                                    border-bottom-color: $primary_color;
+                                    border-right-color: $primary_color;
+                                    @include box_sizing(border-box);
+                                    @include border_radius(50%);
+                                }
+                            }
+                            &:last-child {
+                                margin: 30px 0 0 0;
+                            }
+                        }
+                    }
+                }
+                .language-skills {
+                    margin: 50px 0 0 0;
+                    .resume-section-title {
+                        margin: 0 0 13px 0 !important;
+                    }
+                    .skill-flex {
+                        @include flex_direction(column);
+                        .progress-bar-2 {
+                            position: relative;
+                            margin: 20px 0 0 0;
+                            text-align: left;
+                            &:last-child {
+                                margin: 20px 0 0 0;
+                            }
+                            .percent {
+                                position: absolute;
+                                right: 0;
+                                font-size: 14px;
+                                font-weight: 400;
+                                text-align: center;
+                                top: 0;
+                                @include border_radius(5px);
+                                span {
+                                    display: inline-block;
+                                    margin-top: -15px;
+                                    font-size: 14px;
+                                    color: $paragraph_color;
+                                }
+                            }
+                            .barOverflow {
+                                width: 100%;
+                                height: 4px;
+                                background: $gray_color;
+                                .bar {
+                                    width: 100%;
+                                    height: 4px;
+                                    border: none;
+                                    background: linear-gradient(45deg, $primary_color, $secondary_color);
+                                    @include border_radius(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

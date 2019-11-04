@@ -1,0 +1,16 @@
+
+/* Responsive Device Layout*/
+$mobile_device_xs: 'only screen and (max-width: 384px)';
+$mobile_device_xs2: 'only screen and (max-width: 320px)';
+$mobile_device: 'only screen and (max-width: 480px)';
+$lg_mobile_3: '(max-width: 575px)';
+$lg_mobile_2: '(max-width: 481px)';
+$lg_mobile: '(min-width: 481px) and (max-width: 767px)';
+$ipad_device_2: '(max-width: 860px)';
+$ipad_device: '(min-width: 768px) and (max-width: 991px)';
+$laptop_device_3: '(min-width:993px) and (max-width:1199px)';
+$laptop_device_2: '(min-width:992px) and (max-width:1200px)';
+$laptop_device_1: '(min-width:1201px) and (max-width:1349px)';
+$small_desktop: '(min-width:1350px)';
+$large_desktop_2: '(max-width:1800px) and  (min-width:1600px)';
+$large_desktop: '(max-width:1920px) and  (min-width:1801px)';

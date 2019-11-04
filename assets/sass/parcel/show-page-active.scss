@@ -1,0 +1,50 @@
+
+
+.all-sections {
+    .all-section-inner {
+        .single_page {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            right: -500px;
+            top: 0;
+            overflow-x: hidden;
+            z-index: -1;
+            visibility: hidden;
+            padding: 45px 45px 45px 10px;
+            background: $white_color;
+            @include transition_duration(0.9s);
+            @media #{$laptop_device_2} {
+                padding: 30px;
+            }
+            @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                position: relative;
+                right: 0;
+                opacity: 1;
+                visibility: visible;
+                z-index: 1;
+                padding: 20px 20px 50px 20px;
+                height: auto;
+            }
+            @media #{$mobile_device_xs, $mobile_device_xs2} {
+                padding: 20px 0 40px 0;
+            }
+            .section_icon {
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                font-size: 100px;
+                opacity: 0.05;
+                color: $primary_color;
+            }
+        }
+        .single_page.active {
+            visibility: visible;
+            z-index: 1;
+            opacity: 1;
+            right: 0;
+            @include transition_duration(1s);
+        }
+    }
+}

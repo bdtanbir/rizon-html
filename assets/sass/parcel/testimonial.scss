@@ -1,0 +1,112 @@
+
+
+
+  
+.all-sections {
+    .all-section-inner {
+        .testimonial {
+            .hero_title_shape {
+                margin-bottom: 25px;
+            }
+            .testimonial-slider {
+                .owl-item {
+                    padding: 15px;
+                }
+                .testimonial-item {
+                    .bio {
+                        background: $white_color;
+                        padding: 20px;
+                        position: relative;
+                        border: 1px solid rgba(95, 111, 129, 0.15);
+                        @include border_radius(4px);
+                        @include box_shadow(0 0 30px rgba(95, 111, 129, 0.05));
+                        @include transition(.3s);
+                        @media #{$mobile_device} {
+                            @include flex_direction(column);
+                        }
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            border-left: 1px solid rgba(95, 111, 129, 0.15);
+                            border-bottom: 1px solid rgba(95, 111, 129, 0.15);
+                            border-top: none;
+                            border-right: none;
+                            width: 15px;
+                            height: 15px;
+                            left: 35px;
+                            bottom: -8px;
+                            background: $white_color;
+                            @include transform(rotate(-45deg));
+                            @include transition(.3s);
+                        }
+                        .quote {
+                            i {
+                                font-size: 80px;
+                                display: inline-block;
+                                margin-right: 5px;
+                                opacity: 0.1;
+                                color: $primary_color;
+                                @media #{$mobile_device} {
+                                    margin: 0 0 0 -7px;
+                                }
+                            }
+                        }
+                        p {
+                            line-height: 1.8;
+                        }
+                    }
+                    .testimonial-image {
+                        margin: 30px 0;
+                        position: relative;
+                        @include align_items(center);
+                        img {
+                            width: 90px;
+                            height: 90px;
+                            position: relative;
+                            margin-right: 10px;
+                            border: 8px solid rgba(95, 111, 129, 0.15);
+                            @include border_radius(50%);
+                        }
+                        .name-city {
+                            .name {
+                                font-size: 20px;
+                                font-weight: 600;
+                            }
+                            .country {
+                                color: $paragraph_color;
+                                font-size: 13px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .bio {
+                            border-color: $primary_color;
+                            &:before {
+                                border-color: $primary_color; 
+                            }
+                        }
+                    }
+                }
+                .owl-dots {
+                    display: flex;
+                    margin-top: 20px;
+                    @include align_items(center);
+                    @include justify_content(center);
+                    .owl-dot {
+                        background: $primary_color;
+                        width: 10px;
+                        height: 5px;
+                        opacity: 0.2;
+                        margin: 0 2px;
+                        @include border_radius(10px);
+                    }
+                    .owl-dot.active {
+                        opacity: 1;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

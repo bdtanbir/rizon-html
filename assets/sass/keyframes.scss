@@ -1,0 +1,69 @@
+
+
+//wrench tool animation
+@keyframes wrench_animation {
+  0% {
+    @include transform(rotate(-5deg));
+  }
+  50% {
+    @include transform(rotate(20deg));
+  }
+  100% {
+    @include transform(rotate(-5deg));
+  }
+}
+
+// author image shape
+@keyframes author_img_shadow {
+  0% {
+    @include transform(scale(0.9));
+  }
+  100% {
+    @include transform(scale(1.3));
+    opacity: 0;
+  }
+}
+
+// loader 
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    @include border_radius(60px 60px 20px 20px);
+    @include transform(scaleX(2));
+  }
+  35% {
+    height: 15px;
+    @include border_radius(50%);
+    @include transform(scaleX(1));
+  }
+  100% {
+    top: 0;
+  }
+}
+
+// Gradient BG Animation
+@keyframes gradient_bg_animation {
+  0% {
+      background-position: 0 50%;
+      color: $heading_color;
+  }
+  50% {
+      background-position: 100% 50%;
+      color: $white_color;
+  }
+  100% {
+      background-position: 0 50%;
+      color: $heading_color;
+  }
+}
+
+// Clock Loader
+@keyframes clock_line {
+  to {
+    @include transform(rotate(0deg));
+  }
+  from {
+    @include transform(rotate(-360deg));
+  }
+}

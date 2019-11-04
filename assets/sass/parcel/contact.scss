@@ -1,0 +1,111 @@
+
+
+
+  
+.all-sections {
+    .all-section-inner {
+        .contact {
+            .hero_title_shape {
+                margin-bottom: 40px;
+            }
+            .contact-form {
+                form {
+                    .input-group {
+                        position: relative;
+                        margin-bottom: 25px;
+                        input:focus,
+                        textarea:focus {
+                            border: 1px solid rgba(50, 50, 50, 0.2);
+                            @include box_shadow(0 0 30px rgba(95, 111, 129, 0.1));
+                        }
+                        input,
+                        textarea {
+                            font-family: $nunito;
+                            background: $white_color;
+                            color: $paragraph_color;
+                            width: 100%;
+                            height: 45px;
+                            border: 1px solid rgba(50, 50, 50, 0.1);
+                            padding: 15px 20px;
+                            margin: 0;
+                            font-size: 14px;
+                            @include transition(.3s);
+                            @include box_sizing(border-box);
+                        }
+                        label {
+                            position: absolute;
+                            font-size: 14px;
+                            margin: 12px 0 0 20px;
+                            cursor: text;
+                            @include transition(.3s);
+                        }
+                        label.active {
+                            margin: -20px 0 0 0;
+                        }
+                        textarea {
+                            width: 100%;
+                            height: 120px;
+                            margin: 0;
+                        }
+                    }
+                    .input-group.mb0 {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .col-lg-6.pr0.pl10,
+            .col-lg-6.pl0.pr10 {
+                @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                    padding: 0;
+                }
+            }
+            .contact-info {
+                background: rgba(50, 50, 50, 0.05);
+                padding: 35px 20px;
+                @include border_radius(4px);
+                @media #{$laptop_device_2} {
+                    padding: 20px 10px;
+                }
+                .info-list {
+                    li {
+                        display: flex;
+                        position: relative;
+                        margin-bottom: 10px;
+                        word-break: break-all;
+                        @include align_items(center);
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        i {
+                            color: $white_color;
+                            background-image: linear-gradient(to right, $secondary_color, $primary_color);
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            margin-right: 10px;
+                            text-align: center;
+                            padding-left: 2px;
+                            @include border_radius(50%);
+                            @include transition(.3s);
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                background: $gray_color;
+                                width: 8px;
+                                height: 8px;
+                                left: 1px;
+                                top: 0px;
+                                @include border_radius(50%);
+                            }
+                        }
+                        &:hover {
+                            i {
+                                @include box_shadow(0 0 30px rgba(48, 76, 253, 0.2));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

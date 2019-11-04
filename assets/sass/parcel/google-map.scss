@@ -1,0 +1,17 @@
+
+
+.google-map {
+    position: relative;
+    margin-top: 25px;
+    #map {
+      width: 100%;
+      height: 400px;
+      .gmnoprint, 
+      button.gm-control-active.gm-fullscreen-control {
+        display:none !important;
+      }
+      @media #{$mobile_device} {
+        height: 300px;
+      }
+    }
+  }

@@ -1,0 +1,154 @@
+
+
+.messenger-box {
+    background: linear-gradient(-41deg, $white_color 74%, #f6f7fe 8%);
+    left: -300px;
+    z-index: 99999;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    padding: 60px 20px 40px 20px;
+    overflow-x: hidden;
+    opacity: 0;
+    visibility: hidden;
+    @include border_radius(50%);
+    @include box_shadow(0 0 30px rgba(95, 111, 129, 0.2));
+    @include transition(.5s);
+    .close-messenger-box {
+        color: $white_color;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        line-height: 40px;
+        text-align: center;
+        background-image: linear-gradient(45deg, $primary_color,$white_color, $secondary_color, $heading_color);
+        background-size: 400% 400%;
+        cursor: pointer;
+        @include animation(gradient_bg_animation 15s ease infinite);
+        @include border_radius(50%);
+        @include box_shadow(0 0 30px rgba(95, 111, 129, 0.3));
+    }
+    .messenger-content {
+        position: relative;
+        .messenger-image {
+            position: relative;
+            img {
+                width: 160px;
+                height: 160px;
+                box-shadow: 0 0 0 10px rgba(95, 111, 129, 0.2), 0 0 0 20px rgba(95, 111, 129, 0.1);
+                @include border_radius(50%);
+            }
+            p {
+                color: $heading_color;
+                font-size: 28px;
+                line-height: 36px;
+                font-weight: 700;
+                margin: 45px 0 30px 0;
+            }
+            // &:before {
+            //     content: '';
+            //     background: $green_color;
+            //     border: 3px solid $white_color;
+            //     width: 20px;
+            //     height: 20px;
+            //     position: absolute;
+            //     right: 55px;
+            //     top: 120px;
+            //     @include border_radius(50%);
+            // }
+        }
+        form {
+            text-align: left;
+            .input-group {
+                position: relative;
+                label {
+                    position: absolute;
+                    margin: 13px 0 0 15px;
+                    cursor: text;
+                    @include transition(.3s);
+                }
+                label.active {
+                    margin: -20px 0 0 0;
+                }
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 10px 20px;
+                    border: 1px solid rgba(95, 111, 129, 0.2);
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                    background: none;
+                    height: 50px;
+                    @include box_sizing(border-box);
+                    @include transition(.3s);
+                    &:focus {
+                        border-color: rgba(95, 111, 129, 0.4);
+                        @include box_shadow(0 0 30px rgba(95, 111, 129, 0.1));
+                    }
+                }
+                textarea {
+                    height: 120px;
+                    margin-bottom: 25px;
+                    resize: none;
+                }
+                button {
+                    width: 100%;
+                    padding: 15px 25px;
+                }
+            }
+        }
+    }
+}
+.messenger-box-cmnt-icon {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    left: 20px;
+    bottom: 20px;
+    font-size: 25px;
+    z-index: 99;
+    @include border_radius(50%);
+    &:before {
+        display: block;
+        background: linear-gradient(to right, $secondary_color, $primary_color);
+        color: $white_color;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        cursor: pointer;
+        z-index: 1;
+        @include box_shadow(0 0 30px rgba(95, 111, 129, 0.2));
+        @include transition(.3s);
+        @include border_radius(50%);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        background: linear-gradient(to right, $primary_color, $secondary_color);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        @include animation(author_img_shadow 1s infinite linear);
+        @include transform(scale(1.3));
+        @include border_radius(50%);
+    }
+}
+.messenger-box-show {
+    .messenger-box {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        @include border_radius(0);
+    }
+}
+
+
+

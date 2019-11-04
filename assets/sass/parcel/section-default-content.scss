@@ -1,0 +1,36 @@
+
+
+
+.section-column {
+  @media #{$laptop_device_2} {
+    padding: 0 0 0 5px;
+  }
+  @media #{$ipad_device, $lg_mobile, $mobile_device} {
+    padding: 0;
+  }
+}
+.all-sections {
+  background-color: $white_color;
+  position: relative;
+  width: 100%;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  overflow: hidden;
+  padding: 0 0 0 40px;
+  @include box_shadow(0 0 30px rgba(95, 111, 129, 0.1));
+  @include border_radius(8px);
+  @media #{$laptop_device_2, $ipad_device, $lg_mobile, $mobile_device} {
+    padding: 0;
+  }
+  .all-section-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    @media #{$ipad_device, $lg_mobile, $mobile_device} {
+      padding: 20px 20px 0 20px;
+    }
+  }
+}
+

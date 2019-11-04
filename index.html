@@ -1,0 +1,1564 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rizon - Responsive vCard HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Rizon - Responsive vCard HTML Template" />
+    <meta name="keywords" content="vcard, responsive, resume, jquery, css3, bootstrap, portfolio, CV" />
+    <meta name="author" content="techydevs" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,300i,400,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900,900i&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/brands.min.css">
+    <link rel="stylesheet" href="assets/css/solid.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body id="body"
+    class="layout-st-1 particle-style-bg body-background-shape section-animation-1 profile-button-style-1 profile-social-layout-1">
+
+    <div class="rizon-loader">
+        <!-- <div class="bounceball"></div> -->
+        <div class="clock-loader d-flex align-items-center justify-content-center">
+            <span></span>
+        </div>
+    </div>
+    <!--end .rizon-loader-->
+    <div id="particles-js"></div>
+
+
+
+    <!-- ****************************** 
+         *	Start All sections div
+         *******************************-->
+    <div class="menu-box menu-style-2">
+        <div class="click-menu-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!--end .click-menu-lines-->
+        <aside class="nav_sidebar">
+            <div class="logo-left">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <!--end .logo-left -->
+            <div class="main_menu text-center">
+                <ul>
+                    <li class="active">
+                        <a href="#home" class="waves-effect waves-black">
+                            <i class="la la-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="waves-effect waves-black">
+                            <i class="la la-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="waves-effect waves-black">
+                            <i class="la la-file-text"></i>
+                            <span>Resume</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="waves-effect waves-black">
+                            <i class="la la-paint-brush"></i>
+                            <span>Works</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#news" class="waves-effect waves-black">
+                            <i class="la la-newspaper-o"></i>
+                            <span>News</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="waves-effect waves-black">
+                            <i class="la la-tty"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--end .main_menu-->
+        </aside>
+        <!--end .nav_sidebar-->
+    </div>
+    <!--end .menu-box .menu-style-2-->
+    <main class="rizon-main">
+        <div class="messenger-box text-center">
+            <i class="la la-close close-messenger-box"></i>
+            <div class="messenger-content" id="messenger">
+                <div class="messenger-image">
+                    <!-- <img src="assets/images/me.jpg" alt="Author"> -->
+                    <p>Do you want to hire me?</p>
+                </div>
+                <!--end .messenger-image-->
+                <div id="form-messages"></div>
+                <form class="messenger__form" method="post" action="mailer.php">
+                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                        Your message was sent successfully.
+                    </div>
+                    <!--end .alert .alert-success .contact__msg-->
+                    <div class="input-group">
+                        <label for="name">Name: </label>
+                        <input id="name" name="name" type="text" class="form-control" required>
+                    </div>
+                    <!--end .input-group -->
+                    <div class="input-group">
+                        <label for="email">Email: </label>
+                        <input name="email" type="email" id="email" class="form-control" required>
+                    </div>
+                    <!--end .input-group-->
+                    <div class="input-group">
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" class="form-control" rows="3" required></textarea>
+                    </div>
+                    <!--end .input-group-->
+                    <div class="input-group">
+                        <button name="submit" type="submit" class="theme-btn">Send Message</button>
+                    </div>
+                    <!--end .input-group-->
+                </form>
+            </div>
+            <!--end .messenger-content-->
+        </div>
+        <!--end .messenger-box-->
+
+        <div class="setting-box">
+            <i class="la la-wrench setting-icon"></i>
+            <div class="popup-setting-box">
+                <h3 class="div-title">Background Layout</h3>
+                <div class="background-layout default-style">
+                    <ul class="layout">
+                        <li class="particle-st-li active">Particle</li>
+                        <li class="no-image-st-li">No Image</li>
+                        <li class="image-st-li">Image</li>
+                        <li class="dark-st-li">Dark</li>
+                    </ul>
+                    <div class="body-shape mt10">
+                        <form method="post" action="#">
+                            <p>
+                                <label>
+                                    <input type="checkbox" checked />
+                                    <span>Background Shape</span>
+                                </label>
+                            </p>
+                        </form>
+                    </div>
+                    <!--end .body-shape-->
+                </div>
+                <!--end .background-layout .default-style-->
+                <h3 class="div-title">Animation Styles</h3>
+                <div class="animation-style default-style">
+                    <ul class="layout">
+                        <li class="animation-st-1 active">Animation 01</li>
+                        <li class="animation-st-2">Animation 02</li>
+                        <li class="animation-st-3">Animation 03</li>
+                        <li class="animation-st-4">Animation 04</li>
+                        <li class="animation-st-5">Animation 05</li>
+                        <li class="animation-st-6">Animation 06</li>
+                        <li class="animation-st-7">Animation 07</li>
+                        <li class="animation-st-8">Animation 08</li>
+                    </ul>
+                </div>
+                <!--end .default-style-->
+                <h3 class="div-title">Profile Buttons</h3>
+                <div class="profile-btn-style default-style">
+                    <ul class="layout">
+                        <li class="profile-btn-st-1 active">Icon & Text</li>
+                        <li class="profile-btn-st-2">Icon</li>
+                        <li class="profile-btn-st-3">Text</li>
+                    </ul>
+                </div>
+                <!--end .default-style-->
+                <h3 class="div-title">Profile Socials</h3>
+                <div class="profile-social-style default-style">
+                    <ul class="layout">
+                        <li class="profile-social-st-1 active">Style 01</li>
+                        <li class="profile-social-st-2">Style 02</li>
+                    </ul>
+                </div>
+                <!--end .default-style-->
+                <a href="#" class="theme-btn">Buy Now <i class="fa fa-shopping-bag"></i></a>
+            </div>
+            <!--end .popup-setting-box -->
+        </div>
+        <!--end .setting-box-->
+
+        <i class="la la-bars menu-show-icon"></i>
+
+        <!--end .menu-box-->
+        <div class="container-fluid p0">
+            <div class="row">
+                <div class="col-lg-12 p0 section-column">
+                    <div class="rizon-center-box">
+                        <div class="all-sections">
+                            <div class="all-section-inner">
+                                <!-- ***********************************
+                                    *   HOME 
+                                    **************************************** -->
+                                <section id="home" class="home single_page active">
+                                    <div class="rizon-home">
+                                        <div id="particle-2"></div>
+                                        <div
+                                            class="home-about text-center d-flex align-items-center justify-content-center">
+                                            <div class="home-content-box">
+                                                <h1>Rizon Pet</h1>
+                                                <h4>I'm <span class="typed"></span></h4>
+                                                <ul class="share-link d-flex align-items-center justify-content-center">
+                                                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                                                    <li><a href=""><i class="fab fa-dribbble"></i></a></li>
+                                                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                                </ul>
+                                                <div class="home-btns d-flex align-items-center justify-content-center">
+                                                    <a href="#" class="theme-btn mr10">Hire Me <i
+                                                            class="fa fa-paper-plane"></i></a>
+                                                    <a href="#" class="theme-btn">Download CV <i
+                                                            class="la la-cloud-download"></i></a>
+                                                </div>
+                                                <!--end .home-btns-->
+                                            </div>
+                                            <!--end .home-content-box-->
+                                        </div>
+                                        <!--end .home-about-->
+                                    </div>
+                                    <!--end .rizon-home-->
+                                </section>
+                                <!--end .home .single_page .active-->
+                                <!-- ***********************************
+                                    *   ABOUT 
+                                    **************************************** -->
+                                <section id="about" class="about single_page">
+                                    <!-- ************** ABOUT **************-->
+                                    <div class="author-content pb80">
+                                        <h1 class="hero_title_shape">About Me</h1>
+                                        <div class="about-me">
+                                            <svg class="about-svg-shape" xmlns="http://www.w3.org/2000/svg" width="335"
+                                                height="373" viewBox="0 0 335 373">
+                                                <g transform="translate(150,200)">
+                                                    <path
+                                                        d="M143.5,-116.3C179.1,-69.8,196.3,-10.5,176.1,25.1C155.9,60.7,98.4,72.7,44.5,102.6C-9.4,132.4,-59.6,180.2,-87.2,170.8C-114.8,161.5,-119.8,95,-130.9,33.5C-142.1,-28,-159.4,-84.4,-138.6,-127.5C-117.8,-170.6,-58.9,-200.3,-2.5,-198.3C53.9,-196.4,107.9,-162.7,143.5,-116.3Z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <div class="row">
+                                                <div class="col-lg-4 pl0 pr10">
+                                                    <div class="right-content">
+                                                        <div class="me-image">
+                                                            <img src="assets/images/me.jpg" alt="About">
+                                                        </div>
+                                                        <!--end .me-image-->
+                                                        <ul class="user-info-list">
+                                                            <li>
+                                                                <strong>Age:</strong>
+                                                                <span>27</span>
+                                                            </li>
+                                                            <li>
+                                                                <strong>City:</strong>
+                                                                <span>New York, brooklyn</span>
+                                                            </li>
+                                                            <li>
+                                                                <strong>Website: </strong>
+                                                                <span><a href="">www.mywebsite.com</a></span>
+                                                            </li>
+                                                            <li>
+                                                                <strong>Email: </strong>
+                                                                <span>info@rizon.com</span>
+                                                            </li>
+                                                            <li>
+                                                                <strong>Skype: </strong>
+                                                                <span>@rizonskype</span>
+                                                            </li>
+                                                            <li>
+                                                                <strong>Phone: </strong>
+                                                                <span>000 888 2222</span>
+                                                            </li>
+                                                            <li>
+                                                                <strong>Freelancer: </strong>
+                                                                <span>Available</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--end .right-content-->
+                                                </div>
+                                                <div class="col-lg-8 pl10 pr0">
+                                                    <div class="left-content">
+                                                        <p>Web designer, developer from New York, brooklyn. Lorem ipsum
+                                                            dolor sit amet, consectetur adipisicing elit. Beatae
+                                                            perspiciatis soluta unde! Hic, nobis sunt. Lorem ipsum dolor
+                                                            sit amet, consectetur adipisicing elit. Culpa, magni? Lorem
+                                                            ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Expedita, vel? Lorem ipsum dolor sit amet.
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Culpa
+                                                            magni? Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                            elit.
+                                                        </p>
+                                                        <p><big>E</big>ligendi aperiam dolorem autem ipsa tempore
+                                                            eveniet
+                                                            facilis enim iure blanditiis sint. Lorem ipsum dolor sit
+                                                            amet consectetur adipisicing elit. Reiciendis quibusdam
+                                                            magni blanditiis facere dicta accusamus minima soluta
+                                                            asperiores? Autem dolore consequuntur quae eveniet id
+                                                            praesentium aperiam nobis dolores, voluptatum, error
+                                                            veritatis quos deserunt non eius. Animi deserunt amet quidem
+                                                            nulla accusamus, enim nobis, error omnis odio in iusto sequi
+                                                            voluptatibus?</p>
+                                                    </div>
+                                                    <!--end .left-content-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end .author-content-->
+                                    <!-- ************** SERVICES **************-->
+                                    <div class="author-services pb70">
+                                        <h1 class="hero_title_shape">My Services</h1>
+                                        <div class="row">
+                                            <div class="col-lg-6 pr10 pl0">
+                                                <div class="services-box text-center">
+                                                    <div class="icon">
+                                                        <i class="la la-code"></i>
+                                                    </div>
+                                                    <!--end .icon-->
+                                                    <div class="content">
+                                                        <h4>Web Design</h4>
+                                                        <p>Vivamus libero lectus, porttitor dignissim mattis
+                                                            aliquam, volutpat non sem. Lorem ipsum dolor sit amet Lorem
+                                                            ipsum dolor sit amet.</p>
+                                                    </div>
+                                                    <!--end .content-->
+                                                </div>
+                                                <!--end .services-box-->
+                                            </div>
+                                            <!--end .col-lg-6-->
+                                            <div class="col-lg-6 pl10 pr0">
+                                                <div class="services-box text-center">
+                                                    <div class="icon">
+                                                        <i class="la la-chrome"></i>
+                                                    </div>
+                                                    <!--end .icon-->
+                                                    <div class="content">
+                                                        <h4>Web Development</h4>
+                                                        <p>Suspendisse id ante venenatis, finibus elit et, molestie
+                                                            leo. Nulla blandit, nisl Lorem ipsum dolor sit amet. Lorem
+                                                            ipsum dolor sit amet.</p>
+                                                    </div>
+                                                    <!--end .content-->
+                                                </div>
+                                                <!--end .services-box .d-flex-->
+                                            </div>
+                                            <!--end .col-lg-6-->
+                                            <div class="col-lg-6 pr10 pl0">
+                                                <div class="services-box text-center">
+                                                    <div class="icon">
+                                                        <i class="la la-image"></i>
+                                                    </div>
+                                                    <!--end .icon-->
+                                                    <div class="content">
+                                                        <h4>Photography</h4>
+                                                        <p>Suspendisse id ante venenatis, finibus elit et, molestie
+                                                            leo. Nulla blandit, nisl Lorem ipsum dolor sit amet. Lorem
+                                                            ipsum dolor sit amet.</p>
+                                                    </div>
+                                                    <!--end .content-->
+                                                </div>
+                                                <!--end .services-box .d-flex-->
+                                            </div>
+                                            <!--end .col-lg-6-->
+                                            <div class="col-lg-6 pl10 pr0">
+                                                <div class="services-box text-center">
+                                                    <div class="icon">
+                                                        <i class="la la-mobile"></i>
+                                                    </div>
+                                                    <!--end .icon-->
+                                                    <div class="content">
+                                                        <h4>Mobile App</h4>
+                                                        <p>Quisque quam sem, bibendum quis justo eu, fermentum
+                                                            ultrices sem. Lorem ipsum dolor sit, amet consectetur. Lorem
+                                                            ipsum dolor sit amet.</p>
+                                                    </div>
+                                                    <!--end .content-->
+                                                </div>
+                                                <!--end .services-box .d-flex-->
+                                            </div>
+                                            <!--end .col-lg-6-->
+                                        </div>
+                                        <!--end. row-->
+                                    </div>
+                                    <!--end .author-services-->
+                                    <!-- ************** PRICING **************-->
+                                    <div class="about-price pb70">
+                                        <h1 class="hero_title_shape">Pricing</h1>
+                                        <div class="row">
+                                            <div class="col-lg-4 pr5 pl0">
+                                                <div class="pricing-box left-box text-center">
+                                                    <h5 class="title">Plan 1</h5>
+                                                    <h1 class="amount">
+                                                        <sup>$</sup>25<span>/monthly</span>
+                                                    </h1>
+                                                    <ul class="list">
+                                                        <li>3 Website</li>
+                                                        <li><strong>55 GB</strong> SSD Storage</li>
+                                                        <li>Standard Performance</li>
+                                                    </ul>
+                                                    <a href="#" class="theme-btn waves-effect waves-light">Buy Now
+                                                        <i class="fa fa-shopping-bag"></i></a>
+                                                </div>
+                                                <!--end .pricing-box .left-box .text-center-->
+                                            </div>
+                                            <!--end .col-lg-4 .pr5 .pl0-->
+                                            <div class="col-lg-4 pl5 pr5">
+                                                <div class="pricing-box right-box text-center active">
+                                                    <h5 class="title">Plan 2</h5>
+                                                    <h1 class="amount">
+                                                        <sup>$</sup>80<span>/yearly</span>
+                                                    </h1>
+                                                    <ul class="list">
+                                                        <li>Ultimate Website</li>
+                                                        <li><strong>Ultimate</strong> SSD Storage</li>
+                                                        <li>High Performance</li>
+                                                        <li>Lorem, ipsum dolor.</li>
+                                                    </ul>
+                                                    <a href="#" class="theme-btn waves-effect waves-light">Buy Now
+                                                        <i class="fa fa-shopping-bag"></i></a>
+                                                </div>
+                                                <!--end .pricing-box .right-box .text-center-->
+                                            </div>
+                                            <!--end .col-lg-4 .pl5 .pr0-->
+                                            <div class="col-lg-4 pl5 pr0">
+                                                <div class="pricing-box right-box text-center">
+                                                    <h5 class="title">Plan 3</h5>
+                                                    <h1 class="amount">
+                                                        <sup>$</sup>60<span>/monthly</span>
+                                                    </h1>
+                                                    <ul class="list">
+                                                        <li>Ultimate Website</li>
+                                                        <li><strong>Ultimate</strong> SSD Storage</li>
+                                                        <li>High Performance</li>
+                                                    </ul>
+                                                    <a href="#" class="theme-btn waves-effect waves-light">Buy Now
+                                                        <i class="fa fa-shopping-bag"></i></a>
+                                                </div>
+                                                <!--end .pricing-box .right-box .text-center-->
+                                            </div>
+                                            <!--end .col-lg-4 .pl5 .pr0-->
+                                        </div>
+                                        <!--end .row-->
+                                    </div>
+                                    <!--end .about-price .pb50-->
+                                    <!-- ************** FUN FACTS **************-->
+                                    <div class="fun-facts pb70">
+                                        <h1 class="hero_title_shape">Fun Facts</h1>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 pr10 pl0">
+                                                <div class="fun-facts-box">
+                                                    <div class="icon">
+                                                        <i class="la la-smile-o"></i>
+                                                    </div>
+                                                    <!--end .icon-->
+                                                    <div class="content-box">
+                                                        <span class="counterup">590</span>
+                                                        <p>Happy Clients</p>
+                                                    </div>
+                                                    <!--end .content-box-->
+                                                </div>
+                                                <!--end .fun-facts-box-->
+                                            </div>
+                                            <!--end .col-lg-4 .pr10 .pl0-->
+                                            <div class="col-lg-4 col-md-6 pr10 pl0">
+                                                <div class="fun-facts-box">
+                                                    <div class="icon">
+                                                        <i class="la la-thumbs-o-up"></i>
+                                                    </div>
+                                                    <!--end .icon-->
+                                                    <div class="content-box">
+                                                        <span class="counterup">975</span>
+                                                        <p>Project Done</p>
+                                                    </div>
+                                                    <!--end .content-box-->
+                                                </div>
+                                                <!--end .fun-facts-box-->
+                                            </div>
+                                            <!--end .col-lg-4.pr10.pl0-->
+                                            <div class="col-lg-4 col-md-6 pr10 pl0">
+                                                <div class="fun-facts-box">
+                                                    <div class="icon">
+                                                        <i class="la la-trophy"></i>
+                                                    </div>
+                                                    <!--end .icon-->
+                                                    <div class="content-box">
+                                                        <span class="counterup">102</span>
+                                                        <p>Contests Won</p>
+                                                    </div>
+                                                    <!--end .content-box-->
+                                                </div>
+                                                <!--end .fun-facts-box-->
+                                            </div>
+                                            <!--end .col-lg-4.pr10.pl0-->
+                                        </div>
+                                        <!--end .row-->
+                                    </div>
+                                    <!--end .fun-facts .pb70-->
+                                    <!-- ************** TESTIMONIAL **************-->
+                                    <div class="testimonial pb80">
+                                        <h1 class="hero_title_shape">Testimonials</h1>
+                                        <div class="testimonial-slider owl-carousel">
+                                            <div class="testimonial-item">
+                                                <div class="bio d-flex">
+                                                    <div class="quote">
+                                                        <i class="la la-quote-left"></i>
+                                                    </div>
+                                                    <!--end .quote-->
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Consequuntur enim et quibusdam, quisquam rerum similique
+                                                        voluptatem voluptates.
+                                                    </p>
+                                                </div>
+                                                <!--end .bio .d-flex-->
+                                                <div class="testimonial-image d-flex">
+                                                    <img src="assets/images/tm1.jpg" alt="testimonial">
+                                                    <div class="name-city">
+                                                        <h4 class="name">Mr. Potato</h4>
+                                                        <span class="country">USA</span>
+                                                    </div>
+                                                    <!--end .name-city-->
+                                                </div>
+                                                <!--end .testimonial-image .d-flex-->
+                                            </div>
+                                            <!--end .testimonial-item-->
+                                            <div class="testimonial-item">
+                                                <div class="bio d-flex">
+                                                    <div class="quote">
+                                                        <i class="la la-quote-left"></i>
+                                                    </div>
+                                                    <!--end .quote-->
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Consequuntur enim et quibusdam, quisquam rerum similique
+                                                        voluptatem voluptates.
+                                                    </p>
+                                                </div>
+                                                <!--end .bio .d-flex-->
+                                                <div class="testimonial-image d-flex">
+                                                    <img src="assets/images/tm2.jpg" alt="testimonial">
+                                                    <div class="name-city">
+                                                        <h4 class="name">Rizon Joe</h4>
+                                                        <span class="country">New York</span>
+                                                    </div>
+                                                    <!--end .name-city-->
+                                                </div>
+                                                <!--end .testimonial-image .d-flex-->
+                                            </div>
+                                            <!--end .testimonial-item-->
+                                            <div class="testimonial-item">
+                                                <div class="bio d-flex">
+                                                    <div class="quote">
+                                                        <i class="la la-quote-left"></i>
+                                                    </div>
+                                                    <!--end .quote-->
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Consequuntur enim et quibusdam, quisquam rerum similique
+                                                        voluptatem voluptates.
+                                                    </p>
+                                                </div>
+                                                <!--end .bio .d-flex-->
+                                                <div class="testimonial-image d-flex">
+                                                    <img src="assets/images/me.jpg" alt="testimonial">
+                                                    <div class="name-city">
+                                                        <h4 class="name">Jhon Joe</h4>
+                                                        <span class="country">United Status</span>
+                                                    </div>
+                                                    <!--end .name-city-->
+                                                </div>
+                                                <!--end .testimonial-image .d-flex-->
+                                            </div>
+                                            <!--end .testimonial-item-->
+                                        </div>
+                                        <!--end .testimonial-slider-->
+                                    </div>
+                                    <!--end .testimonial-->
+                                    <!-- ************** CLIENTS **************-->
+                                    <div class="clients">
+                                        <h1 class="hero_title_shape">Partners</h1>
+                                        <div class="client-slider owl-carousel">
+                                            <div class="client-item">
+                                                <img src="assets/images/client-logo.png" alt="Client Logo">
+                                            </div>
+                                            <!--end .client-item-->
+                                            <div class="client-item">
+                                                <img src="assets/images/client-logo.png" alt="Client Logo">
+                                            </div>
+                                            <!--end .client-item-->
+                                            <div class="client-item">
+                                                <img src="assets/images/client-logo.png" alt="Client Logo">
+                                            </div>
+                                            <!--end .client-item-->
+                                            <div class="client-item">
+                                                <img src="assets/images/client-logo.png" alt="Client Logo">
+                                            </div>
+                                            <!--end .client-item-->
+                                            <div class="client-item">
+                                                <img src="assets/images/client-logo.png" alt="Client Logo">
+                                            </div>
+                                            <!--end .client-item-->
+                                            <div class="client-item">
+                                                <img src="assets/images/client-logo.png" alt="Client Logo">
+                                            </div>
+                                            <!--end .client-item-->
+                                            <div class="client-item">
+                                                <img src="assets/images/client-logo.png" alt="Client Logo">
+                                            </div>
+                                            <!--end .client-item-->
+                                        </div>
+                                        <!--end .client-slider .owl-carousel-->
+                                    </div>
+                                    <!--end .clients-->
+                                </section>
+                                <!--end #about .about .single_page .active-->
+                                <!-- ***********************************
+                                    *   RESUME 
+                                    **************************************** -->
+                                <section id="resume" class="resume single_page">
+                                    <h1 class="hero_title_shape">Resume</h1>
+                                    <i class="la la-file-text section_icon"></i>
+                                    <div
+                                        class="education-experience-title d-flex justify-content-center align-items-center">
+                                        <h2 class="resume-title experience-title">Experience
+                                            <i class="la la-briefcase"></i></h2>
+                                        <h2 class="resume-title education-title"><i class="la la-graduation-cap"></i>
+                                            Education</h2>
+                                    </div>
+                                    <!--end .education-experience-title -->
+                                    <div class="experience-and-education-flex-box d-flex justify-content-between">
+                                        <div class="resume-content-box experience">
+                                            <div class="resume-content">
+                                                <div class="experience-box d-flex align-items-center">
+                                                    <div class="exp-content">
+                                                        <h3>Front-End Developer</h3>
+                                                        <span class="company">School of Design</span>
+                                                        <p>We are a leading web development and digital Marketing
+                                                            company, delivering high quality. Lorem ipsum dolor sit,
+                                                            amet consectetur adipisicing elit. Debitis, culpa!</p>
+                                                    </div>
+                                                    <!--end .exp-content-->
+                                                    <div class="exp-date">
+                                                        <span class="date">2003 <span class="line">|</span> 2006</span>
+                                                    </div>
+                                                    <!--end .exp-date-->
+                                                </div>
+                                                <!--end .experience-box-->
+                                                <div class="experience-box d-flex align-items-center">
+                                                    <div class="exp-content">
+                                                        <h3>Mobile App Developer</h3>
+                                                        <span class="company">Google Inc</span>
+                                                        <p>Optimize your website and apps performance using latest
+                                                            technology. Lorem, ipsum dolor sit amet consectetur
+                                                            adipisicing elit.
+                                                        </p>
+                                                    </div>
+                                                    <!--end .exp-content-->
+                                                    <div class="exp-date">
+                                                        <span class="date">2008 <span class="line">|</span> 2011</span>
+                                                    </div>
+                                                    <!--end .exp-date-->
+                                                </div>
+                                                <!--end .experience-box-->
+                                                <div class="experience-box d-flex align-items-center">
+                                                    <div class="exp-content">
+                                                        <h3>Senior Developer</h3>
+                                                        <span class="company">CLG Inc</span>
+                                                        <p>We are a leading web development and digital Marketing
+                                                            company, delivering high quality. Lorem ipsum dolor sit
+                                                            amet.
+                                                        </p>
+                                                    </div>
+                                                    <!--end .exp-content-->
+                                                    <div class="exp-date">
+                                                        <span class="date">2011 <span class="line">|</span> 2014</span>
+                                                    </div>
+                                                    <!--end .exp-date-->
+                                                </div>
+                                                <!--end .experience-box-->
+                                            </div>
+                                            <!--end .resume-content-->
+                                        </div>
+                                        <!--end .resume-content-box .experience-->
+                                        <div class="resume-content-box education">
+                                            <div class="resume-content">
+                                                <div class="experience-box d-flex align-items-center">
+                                                    <div class="exp-date">
+                                                        <span class="date">2006 <span class="line">|</span> 2009</span>
+                                                    </div>
+                                                    <!--end .exp-date-->
+                                                    <div class="exp-content">
+                                                        <h3>Web Design Course</h3>
+                                                        <span class="company">New York</span>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                                                            inventore mollitia vero? Lorem ipsum, dolor sit amet
+                                                            consectetur adipisicing.</p>
+                                                    </div>
+                                                    <!--end .exp-content-->
+                                                </div>
+                                                <!--end .experience-box-->
+                                                <div class="experience-box d-flex align-items-center">
+                                                    <div class="exp-date">
+                                                        <span class="date">2005 <span class="line">|</span> 2008</span>
+                                                    </div>
+                                                    <!--end .exp-date-->
+                                                    <div class="exp-content">
+                                                        <h3>Art University</h3>
+                                                        <span class="company">America</span>
+                                                        <p>Optimize your website and apps performance using latest
+                                                            technology. Lorem ipsum dolor, sit amet consectetur
+                                                            adipisicing elit.
+                                                        </p>
+                                                    </div>
+                                                    <!--end .exp-content-->
+                                                </div>
+                                                <!--end .experience-box-->
+                                                <div class="experience-box d-flex align-items-center">
+                                                    <div class="exp-date">
+                                                        <span class="date">2001 <span class="line">|</span> 2004</span>
+                                                    </div>
+                                                    <!--end .exp-date-->
+                                                    <div class="exp-content">
+                                                        <h3>Physics</h3>
+                                                        <span class="company">Italy</span>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Amet,
+                                                            consequuntur. Lorem, ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Inventore, quasi.</p>
+                                                    </div>
+                                                    <!--end .exp-content-->
+                                                </div>
+                                                <!--end .experience-box-->
+                                            </div>
+                                            <!--end .resume-content-box-->
+                                        </div>
+                                        <!--end .resume-content.box .education-->
+                                    </div>
+                                    <!--end .resume.education-->
+                                    <div class="semi-progressbar">
+                                        <div class="skills semi-pgb coding-skills">
+                                            <h1 class="resume-section-title"><i class="la la-code"></i> Coding
+                                                Skills
+                                            </h1>
+                                            <div class="skill-flex">
+                                                <div class="pgb-box text-center">
+                                                    <h3>HTML5</h3>
+                                                    <div class="progress mx-auto" data-value='96'>
+                                                        <span class="progress-left">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <span class="progress-right">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <div
+                                                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <div class="h2">96<sup class="small">%</sup></div>
+                                                        </div>
+                                                        <!--end .progress-value-->
+                                                    </div>
+                                                    <!--end .progress .mx-auto-->
+                                                </div>
+                                                <!--end .pgb-box-->
+                                                <div class="pgb-box text-center">
+                                                    <h3>CSS3</h3>
+                                                    <div class="progress mx-auto" data-value='90'>
+                                                        <span class="progress-left">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <span class="progress-right">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <div
+                                                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <div class="h2">90<sup class="small">%</sup></div>
+                                                        </div>
+                                                        <!--end .progress-value-->
+                                                    </div>
+                                                    <!--end .progress .mx-auto-->
+                                                </div>
+                                                <!--end .pgb-box-->
+                                                <div class="pgb-box text-center">
+                                                    <h3>jQuery</h3>
+                                                    <div class="progress mx-auto" data-value='86'>
+                                                        <span class="progress-left">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <span class="progress-right">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <div
+                                                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <div class="h2">86<sup class="small">%</sup></div>
+                                                        </div>
+                                                        <!--end .progress-value-->
+                                                    </div>
+                                                    <!--end .progress .mx-auto-->
+                                                </div>
+                                                <!--end .pgb-box-->
+                                                <div class="pgb-box text-center">
+                                                    <h3>WordPress</h3>
+                                                    <div class="progress mx-auto" data-value='95'>
+                                                        <span class="progress-left">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <span class="progress-right">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <div
+                                                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <div class="h2">95<sup class="small">%</sup></div>
+                                                        </div>
+                                                        <!--end .progress-value-->
+                                                    </div>
+                                                    <!--end .progress .mx-auto-->
+                                                </div>
+                                                <!--end .pgb-box-->
+                                            </div>
+                                            <!--end .skill-flex-->
+                                        </div>
+                                        <!--end .skills-->
+                                        <div class="skills semi-pgb design-skills">
+                                            <h1 class="resume-section-title"><i class="la la-code-fork"></i> Design
+                                                Skills</h1>
+                                            <div class="skill-flex">
+                                                <div class="pgb-box text-center">
+                                                    <h3>Web Design</h3>
+                                                    <div class="progress mx-auto" data-value='100'>
+                                                        <span class="progress-left">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <span class="progress-right">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <div
+                                                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <div class="h2">100<sup class="small">%</sup></div>
+                                                        </div>
+                                                        <!--end .progress-value-->
+                                                    </div>
+                                                    <!--end .progress .mx-auto-->
+                                                </div>
+                                                <!--end .pgb-box-->
+                                                <div class="pgb-box text-center">
+                                                    <h3>Illistrator</h3>
+                                                    <div class="progress mx-auto" data-value='55'>
+                                                        <span class="progress-left">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <span class="progress-right">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <div
+                                                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <div class="h2">55<sup class="small">%</sup></div>
+                                                        </div>
+                                                        <!--end .progress-value-->
+                                                    </div>
+                                                    <!--end .progress .mx-auto-->
+                                                </div>
+                                                <!--end .pgb-box-->
+                                                <div class="pgb-box text-center">
+                                                    <h3>Photography</h3>
+                                                    <div class="progress mx-auto" data-value='70'>
+                                                        <span class="progress-left">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <span class="progress-right">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <div
+                                                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <div class="h2">70<sup class="small">%</sup></div>
+                                                        </div>
+                                                        <!--end .progress-value-->
+                                                    </div>
+                                                    <!--end .progress .mx-auto-->
+                                                </div>
+                                                <!--end .pgb-box-->
+                                                <div class="pgb-box text-center">
+                                                    <h3>UI/UX Design</h3>
+                                                    <div class="progress mx-auto" data-value='90'>
+                                                        <span class="progress-left">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <span class="progress-right">
+                                                            <span class="progress-bar border-primary"></span>
+                                                        </span>
+                                                        <div
+                                                            class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                            <div class="h2">90<sup class="small">%</sup></div>
+                                                        </div>
+                                                        <!--end .progress-value-->
+                                                    </div>
+                                                    <!--end .progress .mx-auto-->
+                                                </div>
+                                                <!--end .pgb-box-->
+                                            </div>
+                                            <!--end .skill-flex-->
+                                        </div>
+                                        <!--end .skills-->
+
+                                        <div class="row">
+                                            <div class="col-lg-6 pl0">
+                                                <div class="skills line-pgb language-skills">
+                                                    <h1 class="resume-section-title"><i class="la la-language"></i>
+                                                        Language
+                                                        Skills</h1>
+                                                    <div class="skill-flex">
+                                                        <div class="progress-bar-2">
+                                                            <h3>English</h3>
+                                                            <div class="barOverflow">
+                                                                <div class="bar"></div>
+                                                            </div>
+                                                            <!--end .barOverflow-->
+                                                            <p class="percent"><span>95</span>%</p>
+                                                        </div>
+                                                        <!--end .progress-bar-2-->
+                                                        <div class="progress-bar-2">
+                                                            <h3>French</h3>
+                                                            <div class="barOverflow">
+                                                                <div class="bar"></div>
+                                                            </div>
+                                                            <!--end .barOverflow-->
+                                                            <p class="percent"><span>76</span>%</p>
+                                                        </div>
+                                                        <!--end .progress-bar-2-->
+                                                        <div class="progress-bar-2">
+                                                            <h3>German</h3>
+                                                            <div class="barOverflow">
+                                                                <div class="bar"></div>
+                                                            </div>
+                                                            <!--end .barOverflow-->
+                                                            <p class="percent"><span>64</span>%</p>
+                                                        </div>
+                                                        <!--end .progress-bar-2-->
+                                                        <div class="progress-bar-2">
+                                                            <h3>Italian</h3>
+                                                            <div class="barOverflow">
+                                                                <div class="bar"></div>
+                                                            </div>
+                                                            <!--end .barOverflow-->
+                                                            <p class="percent"><span>68</span>%</p>
+                                                        </div>
+                                                        <!--end .progress-bar-2-->
+                                                    </div>
+                                                    <!--end .skill-flex-->
+                                                </div>
+                                                <!--end .skills-->
+                                            </div>
+                                            <div class="col-lg-6 pr0">
+                                                <div class="personal-skill">
+                                                    <h1 class="skills-section-title"><i class="la la-tasks"></i>
+                                                        Personal Skills
+                                                    </h1>
+                                                    <ul class="personal-skl-info">
+                                                        <li>Creative & hard working</li>
+                                                        <li>Loyal to the company</li>
+                                                        <li>Success motivated</li>
+                                                        <li>Effective problem solver</li>
+                                                        <li>Good team player</li>
+                                                        <li>Tactful and patient communicator</li>
+                                                    </ul>
+                                                </div>
+                                                <!--end .personal-skill-->
+                                            </div>
+                                            <!--end .col-lg-6 .pr0-->
+                                        </div>
+                                        <!--end .row-->
+                                    </div>
+                                    <!--end .semi-progressbar-->
+                                </section>
+                                <!--end #resume .resume.single_page-->
+                                <!-- ***********************************
+                                    *   PORTFOLIO 
+                                    **************************************** -->
+                                <section id="portfolio" class="portfolio single_page">
+                                    <h1 class="hero_title_shape">Creative Works</h1>
+                                    <i class="la la-paint-brush section_icon"></i>
+                                    <div id="portfolio-filter">
+                                        <div class="big-demo" data-js="hero-demo">
+                                            <div class="ui-group">
+                                                <div class="filters button-group js-radio-button-group">
+                                                    <button class="button is-checked waves-effect waves-light"
+                                                        data-filter="*">All</button>
+                                                    <button class="button waves-effect waves-light"
+                                                        data-filter=".design">Design</button>
+                                                    <button class="button waves-effect waves-light"
+                                                        data-filter=".photography">Photography</button>
+                                                    <button class="button waves-effect waves-light"
+                                                        data-filter=".development">Development</button>
+                                                </div>
+                                                <!--end .filters .button-group .js-radio-button-group-->
+                                            </div>
+                                            <!--end .ui-group-->
+                                            <div class="grid">
+                                                <div class="element-item photography" data-category="photography">
+                                                    <div class="portfolio-image">
+                                                        <a class=" waves-effect waves-light"
+                                                            href="assets/images/portfolio/p1.jpg"
+                                                            data-lightbox="roadtrip">
+                                                            <img src="assets/images/portfolio/p1.jpg" alt="Portfolio">
+                                                            <i class="la la-image"></i>
+                                                        </a>
+                                                        <div class="portfolio-info">
+                                                            <h3>Mockup</h3>
+                                                            <span>Photography</span>
+                                                        </div><!-- end .portfolio-info-->
+                                                    </div>
+                                                    <!--end .portfolio-image-->
+                                                </div>
+                                                <!--end .element-item .photography-->
+                                                <div class="element-item development" data-category="photography">
+                                                    <div class="portfolio-image">
+                                                        <a class=" waves-effect waves-light"
+                                                            href="assets/images/portfolio/p2.jpg"
+                                                            data-lightbox="roadtrip">
+                                                            <img src="assets/images/portfolio/p2.jpg" alt="Portfolio">
+                                                            <i class="la la-image"></i>
+                                                        </a>
+                                                        <div class="portfolio-info">
+                                                            <h3>Mockup Paper</h3>
+                                                            <span>Development</span>
+                                                        </div>
+                                                        <!--end .portfolio-info-->
+                                                    </div>
+                                                    <!--end .portfolio-image-->
+                                                </div>
+                                                <!--end .element-item-->
+                                                <div class="element-item development  " data-category="photography">
+                                                    <div class="portfolio-image">
+                                                        <a class=" waves-effect waves-light"
+                                                            href="assets/images/portfolio/p3.jpg"
+                                                            data-lightbox="roadtrip">
+                                                            <img src="assets/images/portfolio/p3.jpg" alt="Portfolio">
+                                                            <i class="la la-image"></i>
+                                                        </a>
+                                                        <div class="portfolio-info">
+                                                            <h3>Mockup Phone</h3>
+                                                            <span>Development</span>
+                                                        </div>
+                                                        <!--end .portfolio-info-->
+                                                    </div>
+                                                    <!--end .portfolio-image-->
+                                                </div>
+                                                <!--end .element-item-->
+                                                <div class="element-item  design " data-category="photography">
+                                                    <div class="portfolio-image">
+                                                        <a class=" waves-effect waves-light"
+                                                            href="assets/images/portfolio/p4.jpg"
+                                                            data-lightbox="roadtrip">
+                                                            <img src="assets/images/portfolio/p4.jpg" alt="Portfolio">
+                                                            <i class="la la-image"></i>
+                                                        </a>
+                                                        <div class="portfolio-info">
+                                                            <h3>Mockup Frame</h3>
+                                                            <span>Design</span>
+                                                        </div>
+                                                        <!--end .portfolio-info-->
+                                                    </div>
+                                                    <!--end .portfolio-image-->
+                                                </div>
+                                                <!--end .element-item-->
+                                                <div class="element-item  design " data-category="photography">
+                                                    <div class="portfolio-image">
+                                                        <a class=" waves-effect waves-light"
+                                                            href="assets/images/portfolio/p5.jpg"
+                                                            data-lightbox="roadtrip">
+                                                            <img src="assets/images/portfolio/p5.jpg" alt="Portfolio">
+                                                            <i class="la la-image"></i>
+                                                        </a>
+                                                        <div class="portfolio-info">
+                                                            <h3>Mockup Box</h3>
+                                                            <span>Design</span>
+                                                        </div>
+                                                        <!--end .portfolio-info-->
+                                                    </div>
+                                                    <!--end .portfolio-image-->
+                                                </div>
+                                                <!--end .element-item-->
+                                                <div class="element-item  photography " data-category="photography">
+                                                    <div class="portfolio-image">
+                                                        <a class=" waves-effect waves-light"
+                                                            href="assets/images/portfolio/p6.jpg"
+                                                            data-lightbox="roadtrip">
+                                                            <img src="assets/images/portfolio/p6.jpg" alt="Portfolio">
+                                                            <i class="la la-image"></i>
+                                                        </a>
+                                                        <div class="portfolio-info">
+                                                            <h3>Mockup Cup</h3>
+                                                            <span>Photography</span>
+                                                        </div>
+                                                        <!--end .portfolio-info-->
+                                                    </div>
+                                                    <!--end .portfolio-image-->
+                                                </div>
+                                                <!--end .element-item-->
+                                                <div class="element-item  design " data-category="photography">
+                                                    <div class="portfolio-image">
+                                                        <a class=" waves-effect waves-light"
+                                                            href="assets/images/portfolio/p7.jpg"
+                                                            data-lightbox="roadtrip">
+                                                            <img src="assets/images/portfolio/p7.jpg" alt="Portfolio">
+                                                            <i class="la la-image"></i>
+                                                        </a>
+                                                        <div class="portfolio-info">
+                                                            <h3>Mockup Art</h3>
+                                                            <span>Design</span>
+                                                        </div>
+                                                        <!--end .portfolio-info -->
+                                                    </div>
+                                                    <!--end .portfolio-image-->
+                                                </div>
+                                                <!--end .element-item-->
+                                                <div class="element-item photography" data-category="photography">
+                                                    <div class="portfolio-image">
+                                                        <a class=" waves-effect waves-light"
+                                                            href="assets/images/portfolio/p8.jpg"
+                                                            data-lightbox="roadtrip">
+                                                            <img src="assets/images/portfolio/p8.jpg" alt="Portfolio">
+                                                            <i class="la la-image"></i>
+                                                        </a>
+                                                        <div class="portfolio-info">
+                                                            <h3>Mockup Laptop</h3>
+                                                            <span>Photography</span>
+                                                        </div>
+                                                        <!--end .portfolio-info-->
+                                                    </div>
+                                                    <!--end .portfolio-image-->
+                                                </div>
+                                                <!--end .element-item-->
+                                                <div class="element-item development" data-category="photography">
+                                                    <div class="portfolio-image">
+                                                        <a class=" waves-effect waves-light"
+                                                            href="assets/images/portfolio/p9.jpg"
+                                                            data-lightbox="roadtrip">
+                                                            <img src="assets/images/portfolio/p9.jpg" alt="Portfolio">
+                                                            <i class="la la-image"></i>
+                                                        </a>
+                                                        <div class="portfolio-info">
+                                                            <h3>Mockup Laptop</h3>
+                                                            <span>Development</span>
+                                                        </div>
+                                                        <!--end .portfolio-info-->
+                                                    </div>
+                                                    <!--end .portfolio-image-->
+                                                </div>
+                                                <!--end .element-item-->
+                                            </div>
+                                            <!--end .grid-->
+                                        </div>
+                                        <!--end .big-demo-->
+                                    </div>
+                                    <!--end .portfolio-filter-->
+                                </section>
+                                <!--end .portfolio .single_page-->
+                                <!-- ***********************************
+                                    *   NEWS 
+                                    **************************************** -->
+                                <section id="news" class="news single_page">
+                                    <h1 class="hero_title_shape">Latest News</h1>
+                                    <i class="la la-newspaper-o section_icon"></i>
+                                    <div class="row">
+                                        <div class="col-lg-6 pr10 pl0">
+                                            <div class="new-box">
+                                                <div class="image-box"></div>
+                                                <div class="content">
+                                                    <h3><a href="#">Secreat of Development</a></h3>
+                                                    <span class="date">Jan 01, 2019</span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
+                                                        voluptate.</p>
+                                                </div>
+                                                <!--end .content-->
+                                            </div>
+                                            <!--end .new-box-->
+                                        </div>
+                                        <!--end .col-lg-6.pr10.pl0-->
+                                        <div class="col-lg-6 pr0 pl10">
+                                            <div class="new-box">
+                                                <div class="image-box bg_2"></div>
+                                                <div class="content">
+                                                    <h3><a href="#">Best Fonts Every Designer</a></h3>
+                                                    <span class="date">Feb 07, 2019</span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <!--end .content-->
+                                            </div>
+                                            <!--end .new-box-->
+                                        </div>
+                                        <div class="col-lg-6 pr10 pl0">
+                                            <div class="new-box">
+                                                <div class="image-box bg_3"></div>
+                                                <div class="content">
+                                                    <h3><a href="#">Most Photographer 2019</a></h3>
+                                                    <span class="date">Mar 04, 2019</span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <!--end .content-->
+                                            </div>
+                                            <!--end .new-box-->
+                                        </div>
+                                        <!--end .col-lg-6 .pr10 .pl0-->
+                                        <div class="col-lg-6 pr0 pl10">
+                                            <div class="new-box">
+                                                <div class="image-box bg_4"></div>
+                                                <div class="content">
+                                                    <h3><a href="#">An Introduction To PostHTMl</a></h3>
+                                                    <span class="date">Apr 11, 2019</span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <!--end .content-->
+                                            </div>
+                                            <!--end .new-box-->
+                                        </div>
+                                        <!--end .col-lg-6 .pr0 .pl10-->
+                                    </div>
+                                    <!--end .row-->
+
+                                    <div class="row">
+                                        <div class="col-lg-12 pr0 pl0">
+                                            <nav class="pagination-nav">
+                                                <ul class="pagination">
+                                                    <li class="page-item active">
+                                                        <a class="page-link  waves-effect waves-light" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link  waves-effect waves-light" href="#">2</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link  waves-effect waves-light" href="#">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link  waves-effect waves-light" href="#"><i
+                                                                class="la la-angle-right"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <!--end .col-lg-12 .pr0 .pl0-->
+                                    </div>
+                                    <!--end .row-->
+                                </section>
+                                <!--end #news .news .single_page-->
+                                <!-- ***********************************
+                                    *   CONTACT 
+                                    **************************************** -->
+                                <section id="contact" class="contact single_page">
+                                    <h1 class="hero_title_shape">Contact</h1>
+                                    <i class="la la-tty section_icon"></i>
+                                    <div class="row">
+                                        <div class="col-lg-6 pl0 pr10">
+                                            <div class="contact-form">
+                                                <form action="#" method="post">
+                                                    <div class="input-group">
+                                                        <label for="contact-name">Your Name: </label>
+                                                        <input type="text" name="name" id="contact-name">
+                                                    </div>
+                                                    <!--end .input-group-->
+                                                    <div class="input-group">
+                                                        <label for="contact-email">Your Email: </label>
+                                                        <input type="email" name="EMAIL" id="contact-email">
+                                                    </div>
+                                                    <!--end .input-group-->
+                                                    <div class="input-group mb0">
+                                                        <label for="cmnt">Your Message: </label>
+                                                        <textarea name="comment" id="cmnt"></textarea>
+                                                    </div>
+                                                    <!--end .input-group-->
+                                                    <div class="input-group">
+                                                        <button class="theme-btn  waves-effect waves-light"
+                                                            type="submit">Submit</button>
+                                                    </div>
+                                                    <!--end .input-group-->
+                                                </form>
+                                            </div>
+                                            <!--end .contact-form-->
+                                        </div>
+                                        <!--end .col-lg-6-->
+                                        <div class="col-lg-6 pr0 pl10">
+                                            <div class="contact-info">
+                                                <ul class="info-list">
+                                                    <li>
+                                                        <div><i class="la la-map-marker"></i></div> 42 Brooklyn
+                                                        Street,
+                                                        NYC
+                                                    </li>
+                                                    <li>
+                                                        <div><i class="la la-phone"></i></div> 000 888 2222
+                                                    </li>
+                                                    <li>
+                                                        <div><i class="la la-envelope-o"></i></div> rizon@gmail.com
+                                                    </li>
+                                                    <li>
+                                                        <div><i class="la la-skype"></i></div> @skypeNickName
+                                                    </li>
+                                                    <li>
+                                                        <div><i class="la la-whatsapp"></i></div> @whatsappNickName
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--end .contact-info-->
+                                        </div>
+                                        <!--end .col-lg-6-->
+                                    </div>
+                                    <!--end .row-->
+                                    <div class="google-map">
+                                        <div id="map"></div>
+                                    </div>
+                                    <!--end .google-map-->
+                                </section>
+                                <!--end #contact .contact .single_page-->
+                            </div><!-- end .all-section-inner-->
+                        </div>
+                        <!--end .all-sections-->
+                    </div>
+                    <!--end .rizon-content-box-->
+                </div>
+                <!--end .col-lg-9-->
+            </div>
+            <!--end .row-->
+        </div>
+        <!--end .container-fluid .p0-->
+    </main>
+    <!--end .rizon-main-->
+    <i class="la la-comments-o messenger-box-cmnt-icon"></i>
+    <!-- ****************************** 
+        *	End All sections div
+        *******************************-->
+
+
+    <!-- ***********************************
+        *   BLOG SINGLE 
+        **************************************** -->
+    <div class="single-blog-overlay"></div>
+    <section class="blog-single">
+        <i class="la la-close close-bl-details"></i>
+        <div class="single-blog-content">
+            <div class="bl-single-image">
+                <img class="blog-single-image" src="assets/images/blog/bl-single.jpg" alt="Blog Single">
+                <span class="date">Mar 04, 2019</span>
+            </div>
+            <div class="bl-content">
+                <h3 class="bl-single-title">Best Fonts Every Designer</h3>
+                <p>
+                    Etiam laoreet risus ligula, vitae fringilla felis mattis id. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia Curae; Proin leo nisi, malesuada eu tellus
+                    fermentum, lacinia condimentum orci.
+                </p>
+                <blockquote>
+                    <p>
+                        Etiam laoreet risus ligula, vitae fringilla felis mattis id. Vestibulum ante ipsum primis in
+                        faucibus orci luctus et ultrices posuere
+                    </p>
+                    <cite>-Rizon</cite>
+                </blockquote>
+                <p>
+                    Etiam laoreet risus ligula, vitae fringilla felis mattis id. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia Curae; Proin leo nisi, malesuada eu tellus
+                    fermentum, lacinia condimentum orci. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit, repudiandae error! Enim maiores animi porro voluptatem sed impedit explicabo dolores.
+                </p>
+                <div class="image-with-text d-flex align-items-start justify-content-center mt20 mb30">
+                    <div class="left-image">
+                        <img src="assets/images/blog/bl3.jpg" alt="Blog Image">
+                    </div>
+                    <!--end .left-iamge-->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia itaque consectetur animi
+                        unde adipisci repudiandae nobis quidem, ipsa nesciunt explicabo! Quas tempora alias consectetur
+                        aut dolorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam.</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci numquam temporibus sapiente a. A,
+                    temporibus ad deleniti ex ducimus, facere recusandae veniam sit perspiciatis voluptas culpa laborum
+                    voluptatum libero odit reiciendis tempora consequatur maxime, enim eos facilis tenetur ullam
+                    placeat!</p>
+                <div class="bl-tag d-flex">
+                    <p><strong>Tags: </strong> <a href="#">HTML5</a> <a href="#">CSS3</a> <a href="#">Font</a></p>
+                    <div class="share-box">
+                        <i class="fa fa-share share_icon"></i>
+                        <ul class="share-links">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--end .share-box-->
+                </div>
+                <!--end .bl-tag .d-flex-->
+                <div class="paginate-post d-flex">
+                    <div class="prev-post">
+                        <a href="#" class="theme-btn  waves-effect waves-light">
+                            <i class="la la-long-arrow-left"></i> Prev
+                        </a>
+                    </div>
+                    <!--end .prev-post-->
+                    <div class="next-post">
+                        <a href="#" class="theme-btn  waves-effect waves-light">
+                            Next <i class="la la-long-arrow-right"></i>
+                        </a>
+                    </div>
+                    <!--end .next-post-->
+                </div>
+                <!--end .pagination-post .d-flex-->
+            </div>
+            <!--end .bl-content-->
+            <div id="comments" class="post-comments">
+                <div class="title">
+                    <div class="title_inner"><span>2</span>Comments</div>
+                </div>
+                <!--end .title-->
+                <div class="row comments-row">
+                    <div class="col-lg-12 pr0 pl0">
+                        <ul class="comments">
+                            <li class="comment depth-1">
+                                <div class="comment-box">
+                                    <div class="comment-author d-flex">
+                                        <img class="mr20" src="assets/images/blog/cmnt1.jpg" alt="Commenter">
+                                        <div class="comment-name">
+                                            <h3 class="name">Admin</h3>
+                                            <span class="date  d-flex">
+                                                <span>Apr 12, 2019 </span>
+                                                10:20pm
+                                            </span>
+                                        </div>
+                                        <!--end .comment-name-->
+                                    </div>
+                                    <!--end .comment-author-->
+                                    <div class="comment-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+                                            exercitationem ex, eum hic veritatis quam ab illo libero error optio!</p>
+                                    </div>
+                                    <!--end .comment-text-->
+                                    <span class="comment-reply">
+                                        <a href="#" class="comment-reply-link"><i class="fa fa-reply"></i> Reply</a>
+                                    </span>
+                                </div>
+                                <!--end .comment.box-->
+                            </li>
+                            <li class="comment depth-2">
+                                <div class="comment-box">
+                                    <div class="comment-author d-flex">
+                                        <img class="mr20" src="assets/images/blog/cmnt2.jpg" alt="Commenter">
+                                        <div class="comment-name">
+                                            <h3 class="name">Admin</h3>
+                                            <span class="date  d-flex">
+                                                <span>Apr 12, 2019 </span>
+                                                10:20pm
+                                            </span>
+                                        </div>
+                                        <!--end .comment-name-->
+                                    </div>
+                                    <!--end .comment-author-->
+                                    <div class="comment-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+                                            exercitationem ex, eum hic veritatis quam ab illo libero error optio!</p>
+                                    </div>
+                                    <!--end .comment-text-->
+                                    <span class="comment-reply">
+                                        <a href="#" class="comment-reply-link"><i class="fa fa-reply"></i> Reply</a>
+                                    </span>
+                                </div>
+                                <!--end .comment.box-->
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end .col-lg-12-->
+                </div>
+                <!--end .row .comments-row-->
+                <div class="row form-comments">
+                    <div class="col-lg-12 pr0 pl0">
+                        <div class="form-comment">
+                            <div id="respond" class="comment-respond">
+                                <div id="reply-title" class="title comment-reply-title">
+                                    <div class="title_inner">
+                                        <span>Leave</span> a Comment
+                                    </div>
+                                    <!--end .title_inner-->
+                                </div><!-- end #reply-title .title .comment-reply-title -->
+                                <form method="post" action="" id="commentform" class="comment-form">
+                                    <div class="input-group">
+                                        <label for="author">Name: </label>
+                                        <input id="author" name="author" type="text" required
+                                            data-error="Enter your Name">
+                                    </div>
+                                    <!--end .input-group-->
+                                    <div class="input-group">
+                                        <label for="bl-email">Email: </label>
+                                        <input id="bl-email" name="email" type="email" required
+                                            data-error="Enter your Email">
+                                    </div>
+                                    <!--end .input-group-->
+                                    <div class="input-group mb0">
+                                        <label for="textarea">Comment: </label>
+                                        <textarea name="textarea" id="textarea" required
+                                            data-error="Write your comment"></textarea>
+                                    </div>
+                                    <!--end .input-group-->
+                                    <div class="form-submit">
+                                        <button type="submit" name="submit" id="submit"
+                                            class="theme-btn waves-effect waves-light">Submit <i
+                                                class="la la-paper-plane-o"></i></button>
+                                    </div>
+                                    <!--end .input-group-->
+                                </form>
+                            </div><!-- end #respond .comment-respond-->
+                        </div><!-- end .form-comment-->
+                    </div><!-- end .col-lg-12-->
+                </div><!-- end .row .form-comments -->
+            </div><!-- end #comments .post-comments-->
+        </div><!-- end .single-blog-content-->
+    </section>
+    <!--end .blog-single -->
+
+
+
+    <!-- All Scripts -->
+    <script src="assets/js/jquery-2.2.4.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/isotope-docs.min.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/custom-map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&libraries"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoint.js"></script>
+    <script src="assets/js/themes.js"></script>
+</body>
+
+</html>
