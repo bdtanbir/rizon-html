@@ -1,16 +1,17 @@
 .hero_title_shape {
+  color: $paragraph_color;
   font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 40px;
   position: relative;
   display: inline-block;
   font-weight: 700;
-  color: $paragraph_color;
   @media #{$mobile_device_xs2, $mobile_device_xs} {
     font-size: 1.2rem;
   }
   &:before {
     content: '';
+    background: $primary_color;
     position: absolute;
     width: 50px;
     height: 50px;
@@ -18,7 +19,6 @@
     left: -10px;
     top: 50%;
     opacity: 0.1;
-    background: $primary_color;
     @include transform(translate(0, -50%) rotate(0deg));
     @include border_radius(30% 50% 50% 50%);
     @media #{$mobile_device_xs, $mobile_device_xs2} {

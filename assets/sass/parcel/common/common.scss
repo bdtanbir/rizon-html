@@ -1,6 +1,5 @@
 
 
-
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -48,8 +47,8 @@ input::placeholder, textarea::placeholder {
 }
 input,
 select {
-  width: 100%;
   background-color: $white_color;
+  width: 100%;
   border: none;
 }
 .input-group {
@@ -73,10 +72,10 @@ h4,
 h5,
 h6,
 .h1, .h2,.h3, .h4,.h5,.h6,.p, span {
-  margin: 0;
-  padding: 0;
   color: $heading_color;
   font-family: $montserrat;
+  margin: 0;
+  padding: 0;
 }
 p {
   margin: 0;
@@ -600,7 +599,7 @@ body.dark-bg {
     overflow-y: scroll;
   }
   @media #{$ipad_device} {
-    padding: 50px 150px;
+    padding: 50px 100px;
   }
   @media #{$lg_mobile, $mobile_device} {
     padding: 20px 5px;

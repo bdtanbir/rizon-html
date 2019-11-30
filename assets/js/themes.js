@@ -12,7 +12,7 @@
     04- Typing
     05- User Social Link
     06- Isotope Filter
-    07- Lightbox
+    07- Magnific popup image + modal
     08- Blog Single Page Popup
     09- Google Map
     10- Setting Box
@@ -34,8 +34,8 @@
         $('.rizon-loader').delay('500').fadeOut(1000);
     });
 
-    $(document).on('ready', function () {
 
+    $(document).on('ready', function () {
 
         /**********************************************
          **     01- Menu Link And Page Id Check      **
@@ -188,13 +188,26 @@
         }
 
 
-        /**************************
-         **    07- Lightbox      **
-         **************************/
-        if ($("[data-lightbox='roadtrip']").length) {
-            lightbox.option({
-                'resizeDuration': 200,
-                'wrapAround': true
+        /**********************************************
+         **    07- Magnific popup image + modal      **
+         **********************************************/
+        if ($(".mfp-lightbox").length) {
+            $('.mfp-lightbox').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+            });
+        }
+        if ($(".works-item-link").length) {
+            $('.works-item-link').magnificPopup({
+                type: 'inline',
+                gallery: {
+                    enabled: true
+                },
+                mainClass: 'mfp-fade',
+                closeBtnInside: false,
+                removalDelay: 300
             });
         }
 
@@ -294,16 +307,16 @@
         $(document).on('click', '.setting-box .popup-setting-box .profile-btn-style ul.layout li.profile-btn-st-3', function () {
             $("body").addClass('profile-button-style-3').removeClass('profile-button-style-2 profile-button-style-1 profile-button-style-4');
         });
-        // profile social
-        $(document).on('click', '.setting-box .popup-setting-box .profile-social-style ul.layout li', function () {
-            $(".setting-box .popup-setting-box .profile-social-style ul.layout li").removeClass('active');
+        // Portfolio Design
+        $(document).on('click', '.setting-box .popup-setting-box .portfolio-design-for ul.layout li', function () {
+            $(".setting-box .popup-setting-box .portfolio-design-for ul.layout li").removeClass('active');
             $(this).addClass('active');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .profile-social-style ul.layout li.profile-social-st-1', function () {
-            $("body").addClass('profile-social-layout-1').removeClass('profile-social-layout-2');
+        $(document).on('click', '.setting-box .popup-setting-box .portfolio-design-for ul.layout li.pt-dgn-for-designer', function () {
+            $("body").addClass('portfolio-designer').removeClass('portfolio-developer');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .profile-social-style ul.layout li.profile-social-st-2', function () {
-            $("body").addClass('profile-social-layout-2').removeClass('profile-social-layout-1');
+        $(document).on('click', '.setting-box .popup-setting-box .portfolio-design-for ul.layout li.pt-dgn-for-developer', function () {
+            $("body").addClass('portfolio-developer').removeClass('portfolio-designer');
         });
 
 
@@ -333,14 +346,6 @@
         }
 
 
-        /*********************************
-         **    13- Responsive Menu      **
-         *********************************/
-        $(document).on('click', '.rizon-main .menu-show-icon', function () {
-            $('body').toggleClass('show-hidden-mainmenu');
-        });
-
-
         /****************************
          **    14- CounterUp      **
          ****************************/
@@ -364,13 +369,12 @@
                 easing: "swing",
                 step: function (p) {
                     $bar.css({
-                        width: p + "%", // 100%=180° so: ° = % * 1.8
+                        width: p + "%",
                     });
                     $val.text(p | 0);
                 }
             });
         });
-
 
         $(".progress").each(function () {
             var value = $(this).attr('data-value');
@@ -387,7 +391,6 @@
             }
 
         })
-
         function percentageToDegrees(percentage) {
             return percentage / 100 * 360
         }
@@ -399,7 +402,6 @@
         $(document).on('click', '.menu-box .click-menu-lines', function () {
             $("body").toggleClass('show-main-menu');
         });
-
 
 
 

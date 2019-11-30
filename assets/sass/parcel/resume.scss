@@ -150,6 +150,9 @@
                             @media #{$ipad_device, $lg_mobile, $mobile_device} {
                                 background: linear-gradient(90deg, rgba(16, 137, 255, 0.05), transparent);
                             }
+                            @media #{$mobile_device} {
+                                padding: 25px 15px 15px 15px;
+                            }
                             &:first-child {
                                 &:after {
                                     @include border_radius(50%);
@@ -218,6 +221,9 @@
                             }
                             .exp-date {
                                 margin: 0 0 0 30px;
+                                @media #{$mobile_device} {
+                                    margin: 0 0 0 20px;
+                                }
                                 .date {
                                     color: $white_color;
                                     background: linear-gradient(45deg, $primary_color, $secondary_color);
@@ -254,6 +260,9 @@
                     .resume-content {
                         padding-bottom: 0;
                         margin: 30px 0 50px 0;
+                        @media #{$ipad_device, $lg_mobile, $mobile_device} {
+                            margin: 0px 0 50px 0;
+                        }
                         &:before {
                             display: none;
                             @media #{$ipad_device, $lg_mobile, $mobile_device} {

@@ -27,6 +27,9 @@
                 padding: 20px 20px 50px 20px;
                 height: auto;
             }
+            @media #{$lg_mobile} {
+                padding: 10px 10px 40px 10px;
+            }
             @media #{$mobile_device_xs, $mobile_device_xs2} {
                 padding: 20px 0 40px 0;
             }

@@ -1,8 +1,8 @@
 .theme-btn {
     color: $white_color;
-    display: inline-block;
     background-image: linear-gradient(to right, $primary_color, $secondary_color);
     background-size: 200% auto;
+    display: inline-block;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.4px;
@@ -31,8 +31,8 @@
         margin-left: 5px;
     }
     &:focus {
-        outline: none;
         color: $white_color;
+        outline: none;
         @include box_shadow(0 0 30px rgba(50, 50, 50, 0.1));
         &:before {
             opacity: 1;
@@ -40,8 +40,8 @@
         }
     }
     &:hover {
-        background-position: left center;
         color: $white_color;
+        background-position: left center;
         @include box_shadow(0 0 30px rgba(50, 50, 50, 0.1));
         &:before {
             opacity: 1;

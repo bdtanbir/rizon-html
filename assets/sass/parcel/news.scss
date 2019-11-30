@@ -7,6 +7,11 @@
       .hero_title_shape {
         margin-bottom: 40px;
       }
+      .col-lg-4.pr10.pl0 {
+        @media #{$mobile_device} {
+          padding: 0;
+        }
+      }
       .new-box {
         margin-bottom: 30px;
         position: relative;
@@ -38,6 +43,14 @@
         }
         .image-box.bg_4 {
             background: url(../images/blog/bl4.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .image-box.bg_5 {
+            background: url(../images/blog/bl5.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .image-box.bg_6 {
+            background: url(../images/blog/bl6.jpg) center center no-repeat;
             background-size: cover;
         }
         .content {
@@ -178,8 +191,6 @@
 }
 
 // blog single
-
-
 .single-blog-overlay {
   background: $heading_color;
   position: fixed;
@@ -287,6 +298,9 @@
         font-size: 25px;
         font-weight: 600;
         margin: 0 0 10px 0;
+        @media #{$mobile_device} {
+          font-size: 22px;
+        }
       }
       p {
         line-height: 1.8;

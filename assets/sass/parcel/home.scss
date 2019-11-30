@@ -11,24 +11,37 @@
                     z-index: 1;
                     &:before {
                         content: '';
-                        background: $heading_color;
+                        background: $black_color;
                         position: absolute;
                         width: 100%;
                         height: 100%;
                         left: 0;
                         top: 0;
                         z-index: -1;
-                        opacity: 0.8;
+                        opacity: 0.6 ;
                     }
                     .home-about {
                         height: 100%;
                         position: relative;
+                        @media #{$ipad_device, $lg_mobile} {
+                            padding: 100px 0;
+                        }
+                        @media #{$mobile_device} {
+                            padding: 50px 0;
+                        }
                         .home-content-box {
                             h1 {
                                 color: $white_color;
                                 font-weight: 700;
                                 margin: 0 0 13px 0;
                                 position: relative;
+                                @media #{$lg_mobile, $mobile_device} {
+                                    font-size: 55px;
+                                    display: inline-block;
+                                }
+                                @media #{$mobile_device_xs, $mobile_device_xs2} {
+                                    font-size: 45px;
+                                }
                                 &:before {
                                     content: '';
                                     position: absolute;
@@ -39,6 +52,18 @@
                                     height: 100px;
                                     z-index: -1;
                                     @include border_radius(25% 50% 50% 50%);
+                                    @media #{$lg_mobile, $mobile_device} {
+                                        left: -15px;
+                                        width: 70px;
+                                        height: 70px;
+                                    }
+                                    @media #{$mobile_device_xs, $mobile_device_xs2} {
+                                        left: -15px;
+                                        top: -10px;
+                                        width: 70px;
+                                        height: 70px;
+                                        @include border_radius(55% 20% 50% 50%);
+                                    }
                                 }
                             }
                             h4 {
@@ -46,6 +71,10 @@
                                 font-size: 30px;
                                 margin: 0 0 29px 0;
                                 font-weight: 600;
+                                @media #{$mobile_device_xs, $mobile_device_xs2} {
+                                    font-size: 18px;
+                                    margin: 0 0 20px 0;
+                                }
                                 span {
                                     color: $primary_color;
                                     font-weight: 400;
@@ -53,6 +82,9 @@
                             }
                             .share-link {
                                 margin: 0 0 35px 0;
+                                @media #{$mobile_device} {
+                                    @include flex_wrap(wrap);
+                                }
                                 li {
                                     a {
                                         color: $light_gray_color;
@@ -65,6 +97,11 @@
                                         font-size: 20px;
                                         z-index: 1;
                                         @include transition(.3s);
+                                        @media #{$mobile_device_xs2, $mobile_device_xs} {
+                                            width: 50px;
+                                            height: 50px;
+                                            line-height: 50px;
+                                        }
                                         &:before {
                                             content: '';
                                             background: $white_color;
@@ -91,6 +128,9 @@
                                 a {
                                     background: $black_color;
                                     @include border_radius(0);
+                                    @media #{$mobile_device_xs2, $mobile_device_xs} {
+                                        margin: 0;
+                                    }
                                     &:hover {
                                         background: $black_color;
                                         &:before {
@@ -114,6 +154,83 @@
                                         @include border_radius(50%);
                                         @include transition(0.5s);
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.profile-button-style-1 {
+    .rizon-center-box {
+        .all-sections {
+            .all-section-inner {
+                .home {
+                    .rizon-home {
+                        .home-about {
+                            .home-content-box {
+                                .home-btns {
+                                    display: block !important;
+                                }
+                                .home-btns.home-btns-2 {
+                                    display: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+body.profile-button-style-2 {
+    .rizon-center-box {
+        .all-sections {
+            .all-section-inner {
+                .home {
+                    .rizon-home {
+                        .home-about {
+                            .home-content-box {
+                                .home-btns {
+                                    display: none !important;
+                                }
+                                .home-btns.home-btns-2 {
+                                    display: block !important;
+                                    a {
+                                        i {
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+body.profile-button-style-3 {
+    .rizon-center-box {
+        .all-sections {
+            .all-section-inner {
+                .home {
+                    .rizon-home {
+                        .home-about {
+                            .home-content-box {
+                                .home-btns {
+                                    display: block !important;
+                                    a {
+                                        i {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                .home-btns.home-btns-2 {
+                                    display: none !important;
                                 }
                             }
                         }
