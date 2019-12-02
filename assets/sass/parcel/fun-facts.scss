@@ -1,9 +1,6 @@
-.fun-facts {
+.fun-facts-wrapper {
 	.hero_title_shape {
 		margin-bottom: 32px;
-	}
-	.row {
-		@include align_items(center);
 	}
 	.col-lg-4 {
 		&:last-child {
@@ -15,8 +12,6 @@
 		}
 	}
 	.fun-facts-box {
-		position: relative;
-		text-align: center;
 		background: linear-gradient(45deg, $primary_color, $secondary_color);
 		padding: 0 10px 20px 10px;
 		z-index: 1;
@@ -32,7 +27,7 @@
 				opacity: 1;
 				visibility: visible;
 			}
-			.icon {
+			.fun-facts-icon {
 				&:before,
 				&:after {
 					background: $white_color;
@@ -60,13 +55,12 @@
 			@include border_radius(4px);
 			@include transition(.3s);
 		}
-		.content-box {
+		.fun-facts-content {
 			padding: 50px 0 0 0;
-			.counterup {
+			.fun-facts-counterup {
 				font-size: 30px;
 				font-weight: 600;
 				line-height: 30px;
-				display: inline-block;
 				color: $white_color;
 			}
 			p {
@@ -77,12 +71,10 @@
 				color: $white_color;
 			}
 		}
-		.icon {
-			position: relative;
+		.fun-facts-icon {
 			width: 45px;
 			height: 45px;
 			margin: -22px auto auto auto;
-			position: absolute;
 			left: 50%;
 			@include transform( translate(-50%, 0) );
 			@include box_shadow( 5px 4px 30px rgba( 95, 111, 129, 0.2 ) );
@@ -105,12 +97,9 @@
     			top: 1px;
 			}
 			i {
-				position: relative;
-				display: inline-block;
 				width: 45px;
 				height: 45px;
 				line-height: 45px;
-				text-align: center;
 				font-size: 25px;
 				margin: 0 0 0 0;
 				background: $white_color;

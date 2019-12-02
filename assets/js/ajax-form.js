@@ -1,8 +1,8 @@
 (function ($) {
     'use strict';
 
-    var form = $('.messenger__form'),
-        message = $('.contact__msg'),
+    var form = $('.messenger-box-form'),
+        message = $('.messenger-box-contact__msg'),
         form_data;
 
     // Success function

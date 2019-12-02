@@ -4,8 +4,7 @@
     .all-sections {
         .all-section-inner {
             .home {
-                .rizon-home {
-                    position: relative;
+                .rizon-home-wrapper {
                     height: 100%;
                     background: url(../images/about-bg.jpg) no-repeat center center;
                     z-index: 1;
@@ -20,21 +19,18 @@
                         z-index: -1;
                         opacity: 0.6 ;
                     }
-                    .home-about {
+                    .rizon-home {
                         height: 100%;
-                        position: relative;
                         @media #{$ipad_device, $lg_mobile} {
                             padding: 100px 0;
                         }
                         @media #{$mobile_device} {
                             padding: 50px 0;
                         }
-                        .home-content-box {
+                        .rizon-home-content {
                             h1 {
                                 color: $white_color;
-                                font-weight: 700;
                                 margin: 0 0 13px 0;
-                                position: relative;
                                 @media #{$lg_mobile, $mobile_device} {
                                     font-size: 55px;
                                     display: inline-block;
@@ -80,7 +76,7 @@
                                     font-weight: 400;
                                 }
                             }
-                            .share-link {
+                            .rizon-home-share-link {
                                 margin: 0 0 35px 0;
                                 @media #{$mobile_device} {
                                     @include flex_wrap(wrap);
@@ -89,8 +85,6 @@
                                     a {
                                         color: $light_gray_color;
                                         border: 1px solid rgba(255,255,255,0.1);
-                                        position: relative;
-                                        display: block;
                                         width: 60px;
                                         height: 60px;
                                         line-height: 60px;
@@ -124,7 +118,8 @@
                                     }
                                 }
                             }
-                            .home-btns {
+                            .rizon-home-btns {
+                                display: none;
                                 a {
                                     background: $black_color;
                                     @include border_radius(0);
@@ -169,13 +164,13 @@ body.profile-button-style-1 {
         .all-sections {
             .all-section-inner {
                 .home {
-                    .rizon-home {
-                        .home-about {
-                            .home-content-box {
-                                .home-btns {
+                    .rizon-home-wrapper {
+                        .rizon-home {
+                            .rizon-home-content {
+                                .rizon-home-btns {
                                     display: block !important;
                                 }
-                                .home-btns.home-btns-2 {
+                                .rizon-home-btns.rizon-home-btns-2 {
                                     display: none !important;
                                 }
                             }
@@ -191,13 +186,13 @@ body.profile-button-style-2 {
         .all-sections {
             .all-section-inner {
                 .home {
-                    .rizon-home {
-                        .home-about {
-                            .home-content-box {
-                                .home-btns {
+                    .rizon-home-wrapper {
+                        .rizon-home {
+                            .rizon-home-content {
+                                .rizon-home-btns {
                                     display: none !important;
                                 }
-                                .home-btns.home-btns-2 {
+                                .rizon-home-btns.rizon-home-btns-2 {
                                     display: block !important;
                                     a {
                                         i {
@@ -218,10 +213,10 @@ body.profile-button-style-3 {
         .all-sections {
             .all-section-inner {
                 .home {
-                    .rizon-home {
-                        .home-about {
-                            .home-content-box {
-                                .home-btns {
+                    .rizon-home-wrapper {
+                        .rizon-home {
+                            .rizon-home-content {
+                                .rizon-home-btns {
                                     display: block !important;
                                     a {
                                         i {
@@ -229,7 +224,7 @@ body.profile-button-style-3 {
                                         }
                                     }
                                 }
-                                .home-btns.home-btns-2 {
+                                .rizon-home-btns.rizon-home-btns-2 {
                                     display: none !important;
                                 }
                             }

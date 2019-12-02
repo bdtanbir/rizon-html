@@ -18,7 +18,6 @@
     10- Setting Box
     11- Messenger box
     12- Tooltip
-    13- Responsive Menu
     15- Body Shape Color Picker
 
 */
@@ -42,7 +41,7 @@
          **********************************************/
         var windowWidth = $(window).width(),
             windowHeight = $(window).height(),
-            $hashLink = $('.main_menu  > ul li a');
+            $hashLink = $('.menu-box-menu  > ul li a');
         // Set current Active section on new tabs or window
         var link = window.location.href,
             hashPosition = link.indexOf('#'),
@@ -89,8 +88,8 @@
         if (window.location) {
             $('.single_page').removeClass('active');
             $('#home').addClass('active');
-            $('.main_menu  > ul li').removeClass('active');
-            $('.main_menu > ul li:first-child').addClass('active');
+            $('.menu-box-menu  > ul li').removeClass('active');
+            $('.menu-box-menu > ul li:first-child').addClass('active');
         }
 
         /*****************************
@@ -215,7 +214,7 @@
         /****************************************
          **    08- Blog Single Page Popup      **
          ****************************************/
-        $(document).on('click', '.all-sections .all-section-inner .news .new-box .content h3 a', function (e) {
+        $(document).on('click', '.all-sections .all-section-inner .news-wrapper .news-box .news-box-content h3 a', function (e) {
             $("body").addClass('bl-single-active');
             e.preventDefault();
         });
@@ -236,86 +235,86 @@
          **    10- Setting Box      **
          *****************************/
         // menu style layout
-        $(document).on('click', '.setting-box .popup-setting-box .layout-style ul.layout li', function () {
-            $(".setting-box .popup-setting-box .layout-style ul.layout li").removeClass('active');
+        $(document).on('click', '.setting-box .setting-box-popup .layout-style ul.layout li', function () {
+            $(".setting-box .setting-box-popup .layout-style ul.layout li").removeClass('active');
             $(this).addClass('active');
         });
         $(document).on('click', '.setting-box .setting-icon', function () {
             $("body").toggleClass("show-setting-panel");
         });
         // background layout
-        $(document).on('click', '.setting-box .popup-setting-box .background-layout ul.layout li', function () {
-            $(".setting-box .popup-setting-box .background-layout ul.layout li").removeClass('active');
+        $(document).on('click', '.setting-box .setting-box-popup .background-layout ul.layout li', function () {
+            $(".setting-box .setting-box-popup .background-layout ul.layout li").removeClass('active');
             $(this).addClass('active');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .background-layout ul.layout li.particle-st-li', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .background-layout ul.layout li.particle-st-li', function () {
             $("body").addClass('particle-style-bg').removeClass('no-image-bg image-bg dark-bg');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .background-layout ul.layout li.no-image-st-li', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .background-layout ul.layout li.no-image-st-li', function () {
             $("body").addClass('no-image-bg').removeClass('particle-style-bg image-bg dark-bg');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .background-layout ul.layout li.image-st-li', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .background-layout ul.layout li.image-st-li', function () {
             $("body").addClass('image-bg').removeClass('particle-style-bg no-image-bg dark-bg');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .background-layout ul.layout li.dark-st-li', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .background-layout ul.layout li.dark-st-li', function () {
             $("body").addClass('dark-bg').removeClass('particle-style-bg no-image-bg image-bg');
         });
         // background shape
-        $(document).on('click', '.setting-box .popup-setting-box .background-layout .body-shape span', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .background-layout .body-shape span', function () {
             $("body").toggleClass('body-background-shape');
         });
         // animation styles
-        $(document).on('click', '.setting-box .popup-setting-box .animation-style ul.layout li', function () {
-            $(".setting-box .popup-setting-box .animation-style ul.layout li").removeClass('active');
+        $(document).on('click', '.setting-box .setting-box-popup .animation-style ul.layout li', function () {
+            $(".setting-box .setting-box-popup .animation-style ul.layout li").removeClass('active');
             $(this).addClass('active');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .animation-style ul.layout li.animation-st-1', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .animation-style ul.layout li.animation-st-1', function () {
             $("body").addClass('section-animation-1').removeClass('section-animation-2 section-animation-3 section-animation-4 section-animation-5 section-animation-6 section-animation-7 section-animation-8');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .animation-style ul.layout li.animation-st-2', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .animation-style ul.layout li.animation-st-2', function () {
             $("body").addClass('section-animation-2').removeClass('section-animation-1 section-animation-3 section-animation-4 section-animation-5 section-animation-6 section-animation-7 section-animation-8');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .animation-style ul.layout li.animation-st-3', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .animation-style ul.layout li.animation-st-3', function () {
             $("body").addClass('section-animation-3').removeClass('section-animation-1 section-animation-2 section-animation-4 section-animation-5 section-animation-6 section-animation-7 section-animation-8');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .animation-style ul.layout li.animation-st-4', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .animation-style ul.layout li.animation-st-4', function () {
             $("body").addClass('section-animation-4').removeClass('section-animation-1 section-animation-2 section-animation-3 section-animation-5 section-animation-6 section-animation-7 section-animation-8');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .animation-style ul.layout li.animation-st-5', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .animation-style ul.layout li.animation-st-5', function () {
             $("body").addClass('section-animation-5').removeClass('section-animation-1 section-animation-2 section-animation-3 section-animation-4 section-animation-6 section-animation-7 section-animation-8');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .animation-style ul.layout li.animation-st-6', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .animation-style ul.layout li.animation-st-6', function () {
             $("body").addClass('section-animation-6').removeClass('section-animation-1 section-animation-2 section-animation-3 section-animation-4 section-animation-5 section-animation-7 section-animation-8');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .animation-style ul.layout li.animation-st-7', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .animation-style ul.layout li.animation-st-7', function () {
             $("body").addClass('section-animation-7').removeClass('section-animation-1 section-animation-2 section-animation-3 section-animation-4 section-animation-5 section-animation-6 section-animation-8');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .animation-style ul.layout li.animation-st-8', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .animation-style ul.layout li.animation-st-8', function () {
             $("body").addClass('section-animation-8').removeClass('section-animation-1 section-animation-2 section-animation-3 section-animation-4 section-animation-5 section-animation-6 section-animation-7');
         });
         // profile button
-        $(document).on('click', '.setting-box .popup-setting-box .profile-btn-style ul.layout li', function () {
-            $(".setting-box .popup-setting-box .profile-btn-style ul.layout li").removeClass('active');
+        $(document).on('click', '.setting-box .setting-box-popup .profile-btn-style ul.layout li', function () {
+            $(".setting-box .setting-box-popup .profile-btn-style ul.layout li").removeClass('active');
             $(this).addClass('active');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .profile-btn-style ul.layout li.profile-btn-st-1', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .profile-btn-style ul.layout li.profile-btn-st-1', function () {
             $("body").addClass('profile-button-style-1').removeClass('profile-button-style-2 profile-button-style-3 profile-button-style-4');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .profile-btn-style ul.layout li.profile-btn-st-2', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .profile-btn-style ul.layout li.profile-btn-st-2', function () {
             $("body").addClass('profile-button-style-2').removeClass('profile-button-style-1 profile-button-style-3 profile-button-style-4');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .profile-btn-style ul.layout li.profile-btn-st-3', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .profile-btn-style ul.layout li.profile-btn-st-3', function () {
             $("body").addClass('profile-button-style-3').removeClass('profile-button-style-2 profile-button-style-1 profile-button-style-4');
         });
         // Portfolio Design
-        $(document).on('click', '.setting-box .popup-setting-box .portfolio-design-for ul.layout li', function () {
-            $(".setting-box .popup-setting-box .portfolio-design-for ul.layout li").removeClass('active');
+        $(document).on('click', '.setting-box .setting-box-popup .portfolio-design-for ul.layout li', function () {
+            $(".setting-box .setting-box-popup .portfolio-design-for ul.layout li").removeClass('active');
             $(this).addClass('active');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .portfolio-design-for ul.layout li.pt-dgn-for-designer', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .portfolio-design-for ul.layout li.pt-dgn-for-designer', function () {
             $("body").addClass('portfolio-designer').removeClass('portfolio-developer');
         });
-        $(document).on('click', '.setting-box .popup-setting-box .portfolio-design-for ul.layout li.pt-dgn-for-developer', function () {
+        $(document).on('click', '.setting-box .setting-box-popup .portfolio-design-for ul.layout li.pt-dgn-for-developer', function () {
             $("body").addClass('portfolio-developer').removeClass('portfolio-designer');
         });
 
@@ -327,7 +326,7 @@
         $(document).on('click', '.messenger-box-cmnt-icon', function () {
             $("body").addClass("messenger-box-show");
         });
-        $(document).on('click', '.messenger-box .close-messenger-box', function () {
+        $(document).on('click', '.messenger-box .messenger-box-close', function () {
             $("body").removeClass("messenger-box-show");
         });
 
@@ -349,7 +348,7 @@
         /****************************
          **    14- CounterUp      **
          ****************************/
-        $('.counterup').counterUp({
+        $('.fun-facts-counterup').counterUp({
             delay: 10,
             time: 2000
         });
@@ -390,7 +389,7 @@
                 }
             }
 
-        })
+        });
         function percentageToDegrees(percentage) {
             return percentage / 100 * 360
         }
@@ -399,7 +398,7 @@
         /***************************************
          **    16- Hidden Main Menu Show      **
          ***************************************/
-        $(document).on('click', '.menu-box .click-menu-lines', function () {
+        $(document).on('click', '.menu-box .menu-box-lines', function () {
             $("body").toggleClass('show-main-menu');
         });
 

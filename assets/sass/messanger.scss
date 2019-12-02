@@ -7,7 +7,6 @@
     top: 0;
     width: 300px;
     height: 100vh;
-    position: fixed;
     padding: 60px 20px 40px 20px;
     overflow-x: hidden;
     opacity: 0;
@@ -15,16 +14,13 @@
     @include border_radius(50%);
     @include box_shadow(0 0 30px rgba(95, 111, 129, 0.2));
     @include transition(.5s);
-    .close-messenger-box {
+    .messenger-box-close {
         color: $white_color;
-        position: absolute;
         top: 0;
         right: 0;
         width: 40px;
         height: 40px;
-        display: inline-block;
         line-height: 40px;
-        text-align: center;
         background-image: linear-gradient(45deg, $primary_color,$white_color, $secondary_color, $heading_color);
         background-size: 400% 400%;
         cursor: pointer;
@@ -32,42 +28,19 @@
         @include border_radius(50%);
         @include box_shadow(0 0 30px rgba(95, 111, 129, 0.3));
     }
-    .messenger-content {
-        position: relative;
-        .messenger-image {
-            position: relative;
-            img {
-                width: 160px;
-                height: 160px;
-                box-shadow: 0 0 0 10px rgba(95, 111, 129, 0.2), 0 0 0 20px rgba(95, 111, 129, 0.1);
-                @include border_radius(50%);
-            }
+    .messenger-box-content {
+        .messenger-box-title {
             p {
                 color: $heading_color;
                 font-size: 28px;
                 line-height: 36px;
-                font-weight: 700;
                 margin: 45px 0 30px 0;
             }
-            // &:before {
-            //     content: '';
-            //     background: $green_color;
-            //     border: 3px solid $white_color;
-            //     width: 20px;
-            //     height: 20px;
-            //     position: absolute;
-            //     right: 55px;
-            //     top: 120px;
-            //     @include border_radius(50%);
-            // }
         }
         form {
-            text-align: left;
             .input-group {
-                position: relative;
                 label {
-                    position: absolute;
-                    margin: 13px 0 0 15px;
+                    margin: 15px 0 0 15px;
                     cursor: text;
                     @include transition(.3s);
                 }
@@ -104,7 +77,6 @@
     }
 }
 .messenger-box-cmnt-icon {
-    position: fixed;
     width: 45px;
     height: 45px;
     line-height: 45px;

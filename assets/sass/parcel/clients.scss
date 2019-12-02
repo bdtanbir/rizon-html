@@ -2,24 +2,19 @@
     
   
 .all-sections {
-    .all-section-inner {
-    .clients {
-        .hero_title_shape {
-          margin-bottom: 40px;
-        }
-        .client-slider {
-          .client-item {
-            img {
-              width: auto;
-              opacity: 0.2;
-              margin: auto;
-              @include transition(.3s);
-              &:hover {
-                opacity: 0.5;
-              }
+  .all-section-inner {
+    .clients-wrapper {
+      .client-slider {
+        .client-item {
+          img {
+            opacity: 0.2;
+            @include transition(.3s);
+            &:hover {
+              opacity: 0.5;
             }
           }
         }
       }
     }
+  }
 }

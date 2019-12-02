@@ -2,14 +2,9 @@
   
 .all-sections {
     .all-section-inner {
-        .author-content {
-            .hero_title_shape {
-                margin-bottom: 30px;
-            }            
-            .about-me {
-                position: relative;
-                .about-svg-shape {
-                    position: absolute;
+        .rizon-about-wrapper {
+            .rizon-about {
+                .rizon-about-svg {
                     right: -70px;
                     bottom: -100px;
                     width: 250px;
@@ -53,7 +48,6 @@
                     .me-image {
                         margin: 0 0 30px 0;
                         width: 200px;
-                        position: relative;
                         @media #{$ipad_device, $lg_mobile, $mobile_device} {
                             margin: 0 auto 30px auto;
                         }
@@ -88,14 +82,10 @@
                         }
                         li {
                             border-left: 1px solid $gray_color;
-                            position: relative;
-                            display: flex;
                             font-size: 16px;
                             word-break: break-word;
                             overflow-wrap: break-word;
                             padding: 10px 0 10px 10px;
-                            @include justify_content(space-between);
-                            @include flex_wrap(wrap);
                             @include transition(border 3s ease-in-out 0.1s);
                             @media #{$mobile_device_xs, $mobile_device_xs2} {
                                 font-size: 14px;
@@ -119,7 +109,6 @@
                                 color: $heading_color;
                                 background: rgba(16, 137, 255, 0.03);
                                 padding: 2px 10px;
-                                font-weight: 700;
                                 @include border_radius(30px);
                             }
                             span {

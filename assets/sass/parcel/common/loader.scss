@@ -1,19 +1,14 @@
 
 
 .rizon-loader {
-    position: fixed;
     width: 100%;
     background: $white_color;
     z-index: 99999;
     height: 100%;
-    text-align: center;
     display: flex;
-    @include align_items(center);
-    @include justify_content(center);
-    .clock-loader {
+    .rizon-loader-clock {
         border: 2px dashed $primary_color;
         background: $white_color;
-        position: relative;
         width: 100px;
         height: 100px;
         box-shadow: 0 0 0 3px $white_color, 0 0 0 5px rgba(16, 137, 255, 0.2);
@@ -21,12 +16,10 @@
         -moz-box-shadow: 0 0 0 3px $white_color, 0 0 0 5px rgba(16, 137, 255, 0.2);
         -o-box-shadow: 0 0 0 3px $white_color, 0 0 0 5px rgba(16, 137, 255, 0.2);
         @include border_radius(50%);
-        span {
+        .rizon-loader-line {
             background: linear-gradient(45deg, $primary_color, $secondary_color);
             width: 5px;
             height: 5px;
-            display: inline-block;
-            position: relative;
             @include border_radius(50%);
             &:before,
             &:after {

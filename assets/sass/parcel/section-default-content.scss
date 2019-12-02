@@ -11,12 +11,10 @@
 }
 .all-sections {
   background-color: $white_color;
-  position: relative;
   width: 100%;
   right: 0;
   height: 100%;
   bottom: 0;
-  overflow: hidden;
   padding: 0 0 0 40px;
   @include box_shadow(0 0 30px rgba(95, 111, 129, 0.1));
   @include border_radius(8px);
@@ -24,7 +22,6 @@
     padding: 0;
   }
   .all-section-inner {
-    position: relative;
     width: 100%;
     height: 100%;
     padding: 40px;

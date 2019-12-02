@@ -1,10 +1,7 @@
 .hero_title_shape {
   color: $paragraph_color;
   font-size: 1.5rem;
-  text-transform: uppercase;
   line-height: 40px;
-  position: relative;
-  display: inline-block;
   font-weight: 700;
   @media #{$mobile_device_xs2, $mobile_device_xs} {
     font-size: 1.2rem;

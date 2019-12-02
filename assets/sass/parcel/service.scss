@@ -2,22 +2,17 @@
   
 .all-sections {
     .all-section-inner {
-        .author-services {
-            .hero_title_shape {
-                margin-bottom: 50px;
-            }
+        .author-services-wrapper {
             .col-lg-6.pl10.pr0,
             .col-lg-6.pr10.pl0 {
                 @media #{$lg_mobile, $mobile_device} {
                     padding: 0;
                 }
             }
-            .services-box {
+            .author-services-box {
                 background: $white_color;
                 padding: 40px 30px 30px 30px;
                 margin-bottom: 20px;
-                position: relative;
-                overflow: hidden;
                 z-index: 1;
                 @include transition(.2s);
                 @include border_radius(10px);
@@ -52,7 +47,7 @@
                         left: -150px;
                         top: -150px;
                     }
-                    .icon {
+                    .author-services-icon {
                         i {
                             color: $primary_color;
                             &:after {
@@ -60,7 +55,7 @@
                             }
                         }
                     }
-                    .content {
+                    .author-services-content {
                         h4 {
                             color: $white_color;
                         }
@@ -69,20 +64,17 @@
                         }
                     }
                 }
-                .icon {
+                .author-services-icon {
                     width: 60px;
                     height: 60px;
                     margin: auto auto 25px auto;
                     i {
                         background: $white_color;
                         color: $white_color;
-                        position: relative;
-                        display: inline-block;
                         font-size: 30px;
                         width: 60px;
                         height: 60px;
                         line-height: 60px;
-                        text-align: center;
                         z-index: 1;
                         @include border_radius(30% 50% 50% 50%);
                         @include transition(.2s);
@@ -100,10 +92,9 @@
                         }
                     }
                 }
-                .content {
+                .author-services-content {
                     h4 {
                         font-size: 1rem;
-                        font-weight: 700;
                         margin: 0 0 15px 0;
                         @include transition(.3s);
                     }

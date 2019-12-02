@@ -2,7 +2,6 @@
 
 .setting-box {
     z-index: 9;
-    position: fixed;
     right: 20px;
     top: 70px;
     width: 40px;
@@ -12,20 +11,16 @@
     @include box_shadow(0 0 30px rgba(95, 111, 129, 0.2));
     .setting-icon {
         color: $heading_color;
-        position: absolute;
-        display: inline-block;
         width: 40px;
         height: 40px;
-        text-align: center;
         line-height: 40px;
         font-size: 20px;
         cursor: pointer;
         z-index: 1000;
         @include animation(wrench_animation 1s infinite linear);
     }
-    .popup-setting-box {
+    .setting-box-popup {
         background: $white_color;
-        position: absolute;
         right: -270px;
         top: 100%;
         width: 250px;
@@ -44,8 +39,6 @@
         .div-title {
             font-size: 14px;
             font-weight: 600;
-            position: relative;
-            display: inline-block;
             padding: 0 0 5px 0;
             margin: 0 0 10px 0;
             &:before {
@@ -60,18 +53,14 @@
             }
         }
         .default-style {
-            margin-bottom: 20px;
             &:last-child {
                 margin-bottom: 0;
             }
             ul {
                 li {
-                    display: block;
-                    position: relative;
                     cursor: pointer;
                     font-size: 14px;
                     border-bottom: 1px solid rgba(48, 76, 253, 0.05);
-                    margin-bottom: 5px;
                     padding: 0 0 5px 20px;
                     font-weight: 600;
                     color: $light_gray_color;
@@ -158,7 +147,7 @@
 }
 .body-background-shape {
     .setting-box {
-        .popup-setting-box {
+        .setting-box-popup {
             .background-layout {
                 .body-shape {
                     span {
@@ -176,7 +165,7 @@
 }
 .show-setting-panel {
     .setting-box {
-      .popup-setting-box {
+      .setting-box-popup {
         right: 0;
         opacity: 1;
         visibility: visible;
